@@ -1057,3 +1057,1861 @@ FROM combined_invoices
 [0m12:14:47.931857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271037A0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710312AD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271066E0AC0>]}
 [0m12:14:47.931857 [debug] [MainThread]: Flushing usage events
 [0m12:14:49.043377 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:47:38.999809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015960430FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000159626D6C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000159626D6FA0>]}
+
+
+============================== 10:47:39.012758 | 67c422bd-6ef3-415d-aa53-3f2ed15b7be7 ==============================
+[0m10:47:39.012758 [info ] [MainThread]: Running with dbt=1.10.17
+[0m10:47:39.012758 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'no_print': 'None', 'log_format': 'default', 'version_check': 'True', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'introspect': 'True', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'warn_error': 'None', 'write_json': 'True', 'invocation_command': 'dbt run', 'partial_parse': 'True', 'target_path': 'None', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m10:47:41.116360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015963346A00>]}
+[0m10:47:41.162677 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015961E1C0A0>]}
+[0m10:47:41.179597 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m10:47:41.724313 [debug] [MainThread]: checksum: a50d730a31f4c1af850aa8110f398f1e1657a0325ec5753dae2929b817189a3e, vars: {}, profile: , target: , version: 1.10.17
+[0m10:47:42.455858 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 1 files changed.
+[0m10:47:42.461925 [debug] [MainThread]: Partial parsing: added file: tko_trial://models\marts\dim_invoice_v.sql
+[0m10:47:42.461925 [debug] [MainThread]: Partial parsing: updated file: tko_trial://models\marts\dim_invoice.sql
+[0m10:47:42.667937 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tko_trial.staging
+[0m10:47:42.681752 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015964B3E130>]}
+[0m10:47:42.756333 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m10:47:42.773548 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m10:47:42.905630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015964982460>]}
+[0m10:47:42.905630 [info ] [MainThread]: Found 6 models, 30 sources, 613 macros
+[0m10:47:42.916813 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015964C120A0>]}
+[0m10:47:42.917468 [info ] [MainThread]: 
+[0m10:47:42.917468 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m10:47:42.917468 [info ] [MainThread]: 
+[0m10:47:42.917468 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:47:42.923621 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m10:47:42.938374 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m10:47:44.868965 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m10:47:44.868965 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m10:47:44.868965 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m10:47:44.868965 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m10:47:44.868965 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:44.868965 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:48.804324 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.925 seconds
+[0m10:47:48.808139 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.930 seconds
+[0m10:47:48.812452 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_intermediate'
+[0m10:47:48.825345 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_intermediate"
+[0m10:47:48.825345 [debug] [ThreadPool]: On list_MEDIADMSTAGING_intermediate: show objects in MEDIADMSTAGING.intermediate
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_intermediate"} */;
+[0m10:47:48.825345 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_DEV'
+[0m10:47:48.825345 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:48.828527 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_DEV"
+[0m10:47:48.828527 [debug] [ThreadPool]: On list_MEDIADMSTAGING_DEV: show objects in MEDIADMSTAGING.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_DEV"} */;
+[0m10:47:48.828527 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:47:51.167973 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 2.339 seconds
+[0m10:47:51.379928 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.563 seconds
+[0m10:47:51.390889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001596027FF10>]}
+[0m10:47:51.402072 [debug] [Thread-1  ]: Began running node model.tko_trial.int_invoice_defaults
+[0m10:47:51.402072 [debug] [Thread-2  ]: Began running node model.tko_trial.int_sap_invoices_deduped
+[0m10:47:51.402072 [info ] [Thread-1  ]: 1 of 6 START sql view model intermediate.int_invoice_defaults .................. [RUN]
+[0m10:47:51.402072 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_defaults'
+[0m10:47:51.402072 [info ] [Thread-2  ]: 2 of 6 START sql view model intermediate.int_sap_invoices_deduped .............. [RUN]
+[0m10:47:51.402072 [debug] [Thread-1  ]: Began compiling node model.tko_trial.int_invoice_defaults
+[0m10:47:51.402072 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.tko_trial.int_sap_invoices_deduped'
+[0m10:47:51.417555 [debug] [Thread-1  ]: Writing injected SQL for node "model.tko_trial.int_invoice_defaults"
+[0m10:47:51.419565 [debug] [Thread-2  ]: Began compiling node model.tko_trial.int_sap_invoices_deduped
+[0m10:47:51.422052 [debug] [Thread-2  ]: Writing injected SQL for node "model.tko_trial.int_sap_invoices_deduped"
+[0m10:47:51.425151 [debug] [Thread-1  ]: Began executing node model.tko_trial.int_invoice_defaults
+[0m10:47:51.425151 [debug] [Thread-2  ]: Began executing node model.tko_trial.int_sap_invoices_deduped
+[0m10:47:51.461670 [debug] [Thread-1  ]: Writing runtime sql for node "model.tko_trial.int_invoice_defaults"
+[0m10:47:51.461670 [debug] [Thread-2  ]: Writing runtime sql for node "model.tko_trial.int_sap_invoices_deduped"
+[0m10:47:51.467393 [debug] [Thread-1  ]: Using snowflake connection "model.tko_trial.int_invoice_defaults"
+[0m10:47:51.468935 [debug] [Thread-2  ]: Using snowflake connection "model.tko_trial.int_sap_invoices_deduped"
+[0m10:47:51.469941 [debug] [Thread-1  ]: On model.tko_trial.int_invoice_defaults: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_defaults
+  
+  
+  
+  
+  as (
+    
+
+-- 1. Rights Dummy Row (R-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'R-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 2. Technical Dummy Row (T-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'T-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    '1900-01-01'::DATE AS InvoiceDueDate,
+    '1900-01-01'::DATE AS SAPInvoiceCreatedDate,
+    '1900-01-01'::DATE AS SAPDocumentDate,
+    '1900-01-01'::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Technical' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    '1900-01-01'::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 3. Generic Dummy Row (-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        '', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates '-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_defaults"} */;
+[0m10:47:51.470322 [debug] [Thread-2  ]: On model.tko_trial.int_sap_invoices_deduped: create or replace   view MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+  
+  
+  
+  
+  as (
+    
+
+WITH raw_sap AS (
+    SELECT 
+        SOL_NUMBER,
+        SAP_INVOICE,
+        SAP_ACCTG_DOC,
+        CASE WHEN SAP_CLEAR_DOC = '' THEN NULL ELSE SAP_CLEAR_DOC END AS SAP_CLEAR_DOC,
+        TRY_CAST(SAP_CLEAR_DATE AS DATE) AS SAP_CLEAR_DATE,
+        TRY_CAST(SAP_INV_DATE AS DATE) AS SAP_INV_DATE,
+        InvoiceId,
+        InvoiceType,
+        LOWER(SAP_BILLING_STATUS) AS SAP_BILLING_STATUS,
+        UpdatedDate,
+        Id
+    FROM MediaDMStaging.dbo.SAPImportedInvoices
+    WHERE StatusId = 1
+),
+
+calculated_windows AS (
+    SELECT 
+        *,
+        FIRST_VALUE(TRY_CAST(SAP_INV_DATE AS DATE)) OVER (
+            PARTITION BY SAP_INVOICE, InvoiceId 
+            ORDER BY UpdatedDate
+        ) AS SAP_INV_DATE_FIRST,
+        
+        ROW_NUMBER() OVER (
+            PARTITION BY InvoiceId, SAP_INVOICE 
+            ORDER BY UpdatedDate DESC, Id DESC
+        ) AS RowNumber
+    FROM raw_sap
+)
+
+SELECT * FROM calculated_windows WHERE RowNumber = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_sap_invoices_deduped"} */;
+[0m10:47:51.470322 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m10:47:51.470322 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m10:47:53.949538 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.489 seconds
+[0m10:47:53.984415 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015965BF0460>]}
+[0m10:47:53.984415 [info ] [Thread-2  ]: 2 of 6 OK created sql view model intermediate.int_sap_invoices_deduped ......... [[32mSUCCESS 1[0m in 2.58s]
+[0m10:47:53.984415 [debug] [Thread-2  ]: Finished running node model.tko_trial.int_sap_invoices_deduped
+[0m10:47:53.984415 [debug] [Thread-4  ]: Began running node model.tko_trial.int_invoice_rights
+[0m10:47:53.984415 [debug] [Thread-5  ]: Began running node model.tko_trial.int_invoice_technical
+[0m10:47:53.984415 [info ] [Thread-4  ]: 3 of 6 START sql view model intermediate.int_invoice_rights .................... [RUN]
+[0m10:47:53.984415 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_rights'
+[0m10:47:53.984415 [debug] [Thread-4  ]: Began compiling node model.tko_trial.int_invoice_rights
+[0m10:47:53.984415 [info ] [Thread-5  ]: 4 of 6 START sql view model intermediate.int_invoice_technical ................. [RUN]
+[0m10:47:53.994739 [debug] [Thread-4  ]: Writing injected SQL for node "model.tko_trial.int_invoice_rights"
+[0m10:47:53.994739 [debug] [Thread-5  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_technical'
+[0m10:47:53.997266 [debug] [Thread-5  ]: Began compiling node model.tko_trial.int_invoice_technical
+[0m10:47:54.002586 [debug] [Thread-5  ]: Writing injected SQL for node "model.tko_trial.int_invoice_technical"
+[0m10:47:54.002586 [debug] [Thread-4  ]: Began executing node model.tko_trial.int_invoice_rights
+[0m10:47:54.002586 [debug] [Thread-4  ]: Writing runtime sql for node "model.tko_trial.int_invoice_rights"
+[0m10:47:54.002586 [debug] [Thread-5  ]: Began executing node model.tko_trial.int_invoice_technical
+[0m10:47:54.002586 [debug] [Thread-5  ]: Writing runtime sql for node "model.tko_trial.int_invoice_technical"
+[0m10:47:54.016379 [debug] [Thread-4  ]: Using snowflake connection "model.tko_trial.int_invoice_rights"
+[0m10:47:54.018386 [debug] [Thread-4  ]: On model.tko_trial.int_invoice_rights: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_rights
+  
+  
+  
+  
+  as (
+    
+
+WITH rights_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderRightsInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.SAPLineItemNumber,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderRightsInvoiceOrderDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'R' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    COALESCE(r.SAPLineItemNumber, 'N/A') AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) as InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Rights' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END as CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE, '1900-01-01') AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM rights_source r
+JOIN MediaDMStaging.dbo.OrderRightsInvoice ri ON ri.Id = r.OrderRightsInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.RightsFeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_rights"} */;
+[0m10:47:54.018386 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m10:47:54.022513 [debug] [Thread-5  ]: Using snowflake connection "model.tko_trial.int_invoice_technical"
+[0m10:47:54.023535 [debug] [Thread-5  ]: On model.tko_trial.int_invoice_technical: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_technical
+  
+  
+  
+  
+  as (
+    
+
+WITH tech_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderInvoiceDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'T' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    'N/A' AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) AS InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Technical' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END AS CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE) AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM tech_source r
+JOIN MediaDMStaging.dbo.OrderInvoice ri ON ri.Id = r.OrderInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.FeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_technical"} */;
+[0m10:47:54.023535 [debug] [Thread-5  ]: Opening a new connection, currently in state init
+[0m10:47:54.178835 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.707 seconds
+[0m10:47:54.180845 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015965C23130>]}
+[0m10:47:54.180845 [info ] [Thread-1  ]: 1 of 6 OK created sql view model intermediate.int_invoice_defaults ............. [[32mSUCCESS 1[0m in 2.78s]
+[0m10:47:54.182851 [debug] [Thread-1  ]: Finished running node model.tko_trial.int_invoice_defaults
+[0m10:47:56.688575 [debug] [Thread-5  ]: SQL status: SUCCESS 1 in 2.667 seconds
+[0m10:47:56.693360 [debug] [Thread-5  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015966CDEEB0>]}
+[0m10:47:56.693360 [info ] [Thread-5  ]: 4 of 6 OK created sql view model intermediate.int_invoice_technical ............ [[32mSUCCESS 1[0m in 2.70s]
+[0m10:47:56.693360 [debug] [Thread-5  ]: Finished running node model.tko_trial.int_invoice_technical
+[0m10:47:56.851274 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.833 seconds
+[0m10:47:56.854306 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015965C53850>]}
+[0m10:47:56.854306 [info ] [Thread-4  ]: 3 of 6 OK created sql view model intermediate.int_invoice_rights ............... [[32mSUCCESS 1[0m in 2.87s]
+[0m10:47:56.854306 [debug] [Thread-4  ]: Finished running node model.tko_trial.int_invoice_rights
+[0m10:47:56.854306 [debug] [Thread-3  ]: Began running node model.tko_trial.dim_invoice_v
+[0m10:47:56.854306 [info ] [Thread-3  ]: 5 of 6 START sql view model DEV.dim_invoice_v .................................. [RUN]
+[0m10:47:56.854306 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.tko_trial.dim_invoice_v'
+[0m10:47:56.854306 [debug] [Thread-3  ]: Began compiling node model.tko_trial.dim_invoice_v
+[0m10:47:56.863528 [debug] [Thread-3  ]: Writing injected SQL for node "model.tko_trial.dim_invoice_v"
+[0m10:47:56.869096 [debug] [Thread-3  ]: Began executing node model.tko_trial.dim_invoice_v
+[0m10:47:56.871415 [debug] [Thread-3  ]: Writing runtime sql for node "model.tko_trial.dim_invoice_v"
+[0m10:47:56.876478 [debug] [Thread-3  ]: Using snowflake connection "model.tko_trial.dim_invoice_v"
+[0m10:47:56.876478 [debug] [Thread-3  ]: On model.tko_trial.dim_invoice_v: create or replace   view MEDIADMSTAGING.DEV.dim_invoice_v
+  
+  
+  
+  
+  as (
+    
+
+WITH combined_invoices AS (
+    -- 1. Rights Invoices (Prefix 'R')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_rights
+    
+    UNION ALL
+    
+    -- 2. Technical Invoices (Prefix 'T')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_technical
+    
+    UNION ALL
+    
+    -- 3. Default/Dummy Rows (R-1, T-1, -1)
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_defaults
+)
+
+SELECT 
+    InvoiceKey,
+    SOLItem,
+    BillingCode,
+    InvoiceCategory,
+    InvoiceStatus,
+    InterfaceStatus,
+    FeeType,
+    OrderHeaderId,
+    OrderDetailId,
+    InstallmentNo,
+    CurrencyCode,
+    ProjectionYear,
+    SAPLineItemNumber,
+    SAPSalesOrderNumber,
+    InvoiceDueDate,
+    SAPInvoiceCreatedDate,
+    SAPDocumentDate,
+    InvoiceUpdatedDate,
+    InvoiceInstructions,
+    InvoiceDescription,
+    InvoiceReferenceNumber,
+    RightsTechIndicator,
+    CancellationStatus,
+    Address1,
+    Address2,
+    PostalCode,
+    City,
+    Region,
+    Country,
+    AccountingDocumentNumber,
+    ClearingDocumentNumber,
+    ClearingDocumentDate,
+    SOLNumber,
+    SAP_BILLING_STATUS,
+    IsDataMartDueDate,
+    IssueSite,
+    BillingCompanyId,
+    BillingCompany,
+    CompanyCode,
+    InvoiceProcessedDate,
+    BillingType,
+    VAT,
+    WHT,
+    
+    -- Hash Key Generation using the macro
+    
+    -- Concatenates all relevant dimension columns and hashes them to fingerprint the row
+    -- Uses standard Snowflake MD5 and NULL handling
+    MD5(
+        CONCAT(
+            COALESCE(CAST(InvoiceKey AS VARCHAR), ''), '|',
+            COALESCE(CAST(SOLItem AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceCategory AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(InterfaceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(FeeType AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderHeaderId AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderDetailId AS VARCHAR), ''), '|',
+            COALESCE(CAST(InstallmentNo AS VARCHAR), ''), '|',
+            COALESCE(CAST(CurrencyCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(ProjectionYear AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPLineItemNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPSalesOrderNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceDueDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPInvoiceCreatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(InvoiceUpdatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(InvoiceInstructions AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceDescription AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceReferenceNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(RightsTechIndicator AS VARCHAR), ''), '|',
+            COALESCE(CAST(CancellationStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address1 AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address2 AS VARCHAR), ''), '|',
+            COALESCE(CAST(PostalCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(City AS VARCHAR), ''), '|',
+            COALESCE(CAST(Region AS VARCHAR), ''), '|',
+            COALESCE(CAST(Country AS VARCHAR), ''), '|',
+            COALESCE(CAST(AccountingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(ClearingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(ClearingDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(SOLNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAP_BILLING_STATUS AS VARCHAR), ''), '|',
+            COALESCE(CAST(IsDataMartDueDate AS VARCHAR), ''), '|',
+            COALESCE(CAST(IssueSite AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompanyId AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompany AS VARCHAR), ''), '|',
+            COALESCE(CAST(CompanyCode AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceProcessedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(BillingType AS VARCHAR), ''), '|',
+            COALESCE(CAST(VAT AS VARCHAR), ''), '|',
+            COALESCE(CAST(WHT AS VARCHAR), '')
+        )
+    )
+ AS HashKey,
+    
+    NULL AS DeletedOn
+
+FROM combined_invoices
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice_v"} */;
+[0m10:47:56.876478 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m10:47:59.650421 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 2.773 seconds
+[0m10:47:59.652429 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015965C58580>]}
+[0m10:47:59.652429 [info ] [Thread-3  ]: 5 of 6 OK created sql view model DEV.dim_invoice_v ............................. [[32mSUCCESS 1[0m in 2.80s]
+[0m10:47:59.652429 [debug] [Thread-3  ]: Finished running node model.tko_trial.dim_invoice_v
+[0m10:47:59.652429 [debug] [Thread-6  ]: Began running node model.tko_trial.dim_invoice
+[0m10:47:59.657723 [info ] [Thread-6  ]: 6 of 6 START sql dynamic_table model DEV.dim_invoice ........................... [RUN]
+[0m10:47:59.657723 [debug] [Thread-6  ]: Acquiring new snowflake connection 'model.tko_trial.dim_invoice'
+[0m10:47:59.657723 [debug] [Thread-6  ]: Began compiling node model.tko_trial.dim_invoice
+[0m10:47:59.662521 [debug] [Thread-6  ]: Writing injected SQL for node "model.tko_trial.dim_invoice"
+[0m10:47:59.667848 [debug] [Thread-6  ]: Began executing node model.tko_trial.dim_invoice
+[0m10:47:59.684800 [debug] [Thread-6  ]: Using snowflake connection "model.tko_trial.dim_invoice"
+[0m10:47:59.684800 [debug] [Thread-6  ]: On model.tko_trial.dim_invoice: show dynamic tables like 'DIM_INVOICE' in schema "MEDIADMSTAGING"."DEV"
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice"} */
+[0m10:47:59.685796 [debug] [Thread-6  ]: Opening a new connection, currently in state init
+[0m10:48:02.120219 [debug] [Thread-6  ]: SQL status: SUCCESS 1 in 2.447 seconds
+[0m10:48:02.120219 [warn ] [Thread-6  ]: No configuration changes were identified on: `MEDIADMSTAGING.DEV.dim_invoice`. Continuing.
+[0m10:48:02.136159 [debug] [Thread-6  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '67c422bd-6ef3-415d-aa53-3f2ed15b7be7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015966D3DE20>]}
+[0m10:48:02.136159 [info ] [Thread-6  ]: 6 of 6 OK created sql dynamic_table model DEV.dim_invoice ...................... [[32mskip MEDIADMSTAGING.DEV.dim_invoice[0m in 2.48s]
+[0m10:48:02.136159 [debug] [Thread-6  ]: Finished running node model.tko_trial.dim_invoice
+[0m10:48:02.136159 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:48:02.136159 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING' was left open.
+[0m10:48:02.136159 [debug] [MainThread]: On list_MEDIADMSTAGING: Close
+[0m10:48:02.222342 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING' was left open.
+[0m10:48:02.222342 [debug] [MainThread]: On list_MEDIADMSTAGING: Close
+[0m10:48:02.309712 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_intermediate' was left open.
+[0m10:48:02.310719 [debug] [MainThread]: On list_MEDIADMSTAGING_intermediate: Close
+[0m10:48:02.396831 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_DEV' was left open.
+[0m10:48:02.397830 [debug] [MainThread]: On list_MEDIADMSTAGING_DEV: Close
+[0m10:48:02.479902 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_defaults' was left open.
+[0m10:48:02.479902 [debug] [MainThread]: On model.tko_trial.int_invoice_defaults: Close
+[0m10:48:02.561344 [debug] [MainThread]: Connection 'model.tko_trial.int_sap_invoices_deduped' was left open.
+[0m10:48:02.561344 [debug] [MainThread]: On model.tko_trial.int_sap_invoices_deduped: Close
+[0m10:48:02.642369 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_rights' was left open.
+[0m10:48:02.642369 [debug] [MainThread]: On model.tko_trial.int_invoice_rights: Close
+[0m10:48:02.724061 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_technical' was left open.
+[0m10:48:02.724061 [debug] [MainThread]: On model.tko_trial.int_invoice_technical: Close
+[0m10:48:02.802214 [debug] [MainThread]: Connection 'model.tko_trial.dim_invoice_v' was left open.
+[0m10:48:02.802214 [debug] [MainThread]: On model.tko_trial.dim_invoice_v: Close
+[0m10:48:02.894912 [debug] [MainThread]: Connection 'model.tko_trial.dim_invoice' was left open.
+[0m10:48:02.894912 [debug] [MainThread]: On model.tko_trial.dim_invoice: Close
+[0m10:48:03.002431 [info ] [MainThread]: 
+[0m10:48:03.002431 [info ] [MainThread]: Finished running 1 dynamic table model, 5 view models in 0 hours 0 minutes and 20.08 seconds (20.08s).
+[0m10:48:03.002431 [debug] [MainThread]: Command end result
+[0m10:48:03.035618 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m10:48:03.037986 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m10:48:03.050890 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\GaneshL\Documents\poc\tko_trial\target\run_results.json
+[0m10:48:03.050890 [info ] [MainThread]: 
+[0m10:48:03.050890 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m10:48:03.050890 [info ] [MainThread]: 
+[0m10:48:03.050890 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=6
+[0m10:48:03.050890 [debug] [MainThread]: Command `dbt run` succeeded at 10:48:03.050890 after 24.29 seconds
+[0m10:48:03.050890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015960430FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000159617B9940>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015961E1C0A0>]}
+[0m10:48:03.050890 [debug] [MainThread]: Flushing usage events
+[0m10:48:04.150140 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:51:47.720260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026636D00F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026638FA6C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026638FA6F40>]}
+
+
+============================== 10:51:47.733128 | 90fd697a-823e-42d1-8b90-1064eafe2d93 ==============================
+[0m10:51:47.733128 [info ] [MainThread]: Running with dbt=1.10.17
+[0m10:51:47.735658 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'version_check': 'True', 'empty': 'False', 'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'quiet': 'False', 'warn_error': 'None', 'write_json': 'True', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'no_print': 'None', 'target_path': 'None', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m10:51:48.831695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026635AB7880>]}
+[0m10:51:48.886013 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026639C6D3A0>]}
+[0m10:51:48.889913 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m10:51:49.413491 [debug] [MainThread]: checksum: a50d730a31f4c1af850aa8110f398f1e1657a0325ec5753dae2929b817189a3e, vars: {}, profile: , target: , version: 1.10.17
+[0m10:51:49.789043 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m10:51:49.804427 [debug] [MainThread]: Partial parsing: added file: tko_trial://models\marts\dim_invoice_v.yml
+[0m10:51:49.923601 [warn ] [MainThread]: [[33mWARNING[0m]: Constraint types are not supported for view materializations
+and will be ignored.  Set 'warn_unsupported: false' on this constraint to ignore
+this warning.
+[0m10:51:49.990365 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tko_trial.staging
+[0m10:51:50.011417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663B504130>]}
+[0m10:51:50.088700 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m10:51:50.097700 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m10:51:50.151661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663B25F610>]}
+[0m10:51:50.151661 [info ] [MainThread]: Found 6 models, 30 sources, 613 macros
+[0m10:51:50.151661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663B50C520>]}
+[0m10:51:50.159355 [info ] [MainThread]: 
+[0m10:51:50.159355 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m10:51:50.159355 [info ] [MainThread]: 
+[0m10:51:50.159355 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m10:51:50.169084 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m10:51:50.175463 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m10:51:50.755468 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m10:51:50.755468 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m10:51:50.755468 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m10:51:50.755468 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m10:51:50.755468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:50.755468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:53.745992 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.003 seconds
+[0m10:51:53.761865 [debug] [ThreadPool]: SQL status: SUCCESS 5 in 3.007 seconds
+[0m10:51:53.761865 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_DEV'
+[0m10:51:53.761865 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_DEV"
+[0m10:51:53.777888 [debug] [ThreadPool]: On list_MEDIADMSTAGING_DEV: show objects in MEDIADMSTAGING.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_DEV"} */;
+[0m10:51:53.777888 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:53.777888 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_intermediate'
+[0m10:51:53.782540 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_intermediate"
+[0m10:51:53.782540 [debug] [ThreadPool]: On list_MEDIADMSTAGING_intermediate: show objects in MEDIADMSTAGING.intermediate
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_intermediate"} */;
+[0m10:51:53.782540 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:51:56.354817 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.577 seconds
+[0m10:51:56.384830 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 2.602 seconds
+[0m10:51:56.386835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026639C21EB0>]}
+[0m10:51:56.389023 [debug] [Thread-1  ]: Began running node model.tko_trial.int_invoice_defaults
+[0m10:51:56.389023 [debug] [Thread-2  ]: Began running node model.tko_trial.int_sap_invoices_deduped
+[0m10:51:56.389023 [info ] [Thread-1  ]: 1 of 6 START sql view model intermediate.int_invoice_defaults .................. [RUN]
+[0m10:51:56.389023 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_defaults'
+[0m10:51:56.389023 [debug] [Thread-1  ]: Began compiling node model.tko_trial.int_invoice_defaults
+[0m10:51:56.389023 [info ] [Thread-2  ]: 2 of 6 START sql view model intermediate.int_sap_invoices_deduped .............. [RUN]
+[0m10:51:56.404947 [debug] [Thread-1  ]: Writing injected SQL for node "model.tko_trial.int_invoice_defaults"
+[0m10:51:56.404947 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.tko_trial.int_sap_invoices_deduped'
+[0m10:51:56.404947 [debug] [Thread-2  ]: Began compiling node model.tko_trial.int_sap_invoices_deduped
+[0m10:51:56.404947 [debug] [Thread-2  ]: Writing injected SQL for node "model.tko_trial.int_sap_invoices_deduped"
+[0m10:51:56.410589 [debug] [Thread-1  ]: Began executing node model.tko_trial.int_invoice_defaults
+[0m10:51:56.434635 [debug] [Thread-1  ]: Writing runtime sql for node "model.tko_trial.int_invoice_defaults"
+[0m10:51:56.437574 [debug] [Thread-2  ]: Began executing node model.tko_trial.int_sap_invoices_deduped
+[0m10:51:56.437574 [debug] [Thread-2  ]: Writing runtime sql for node "model.tko_trial.int_sap_invoices_deduped"
+[0m10:51:56.445882 [debug] [Thread-1  ]: Using snowflake connection "model.tko_trial.int_invoice_defaults"
+[0m10:51:56.445882 [debug] [Thread-1  ]: On model.tko_trial.int_invoice_defaults: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_defaults
+  
+  
+  
+  
+  as (
+    
+
+-- 1. Rights Dummy Row (R-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'R-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 2. Technical Dummy Row (T-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'T-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    '1900-01-01'::DATE AS InvoiceDueDate,
+    '1900-01-01'::DATE AS SAPInvoiceCreatedDate,
+    '1900-01-01'::DATE AS SAPDocumentDate,
+    '1900-01-01'::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Technical' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    '1900-01-01'::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 3. Generic Dummy Row (-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        '', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates '-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_defaults"} */;
+[0m10:51:56.445882 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m10:51:56.445882 [debug] [Thread-2  ]: Using snowflake connection "model.tko_trial.int_sap_invoices_deduped"
+[0m10:51:56.445882 [debug] [Thread-2  ]: On model.tko_trial.int_sap_invoices_deduped: create or replace   view MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+  
+  
+  
+  
+  as (
+    
+
+WITH raw_sap AS (
+    SELECT 
+        SOL_NUMBER,
+        SAP_INVOICE,
+        SAP_ACCTG_DOC,
+        CASE WHEN SAP_CLEAR_DOC = '' THEN NULL ELSE SAP_CLEAR_DOC END AS SAP_CLEAR_DOC,
+        TRY_CAST(SAP_CLEAR_DATE AS DATE) AS SAP_CLEAR_DATE,
+        TRY_CAST(SAP_INV_DATE AS DATE) AS SAP_INV_DATE,
+        InvoiceId,
+        InvoiceType,
+        LOWER(SAP_BILLING_STATUS) AS SAP_BILLING_STATUS,
+        UpdatedDate,
+        Id
+    FROM MediaDMStaging.dbo.SAPImportedInvoices
+    WHERE StatusId = 1
+),
+
+calculated_windows AS (
+    SELECT 
+        *,
+        FIRST_VALUE(TRY_CAST(SAP_INV_DATE AS DATE)) OVER (
+            PARTITION BY SAP_INVOICE, InvoiceId 
+            ORDER BY UpdatedDate
+        ) AS SAP_INV_DATE_FIRST,
+        
+        ROW_NUMBER() OVER (
+            PARTITION BY InvoiceId, SAP_INVOICE 
+            ORDER BY UpdatedDate DESC, Id DESC
+        ) AS RowNumber
+    FROM raw_sap
+)
+
+SELECT * FROM calculated_windows WHERE RowNumber = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_sap_invoices_deduped"} */;
+[0m10:51:56.445882 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m10:51:58.932307 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.495 seconds
+[0m10:51:58.963228 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026635A997F0>]}
+[0m10:51:58.963228 [info ] [Thread-1  ]: 1 of 6 OK created sql view model intermediate.int_invoice_defaults ............. [[32mSUCCESS 1[0m in 2.57s]
+[0m10:51:58.963228 [debug] [Thread-1  ]: Finished running node model.tko_trial.int_invoice_defaults
+[0m10:51:59.129835 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.680 seconds
+[0m10:51:59.131833 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C58A5B0>]}
+[0m10:51:59.132833 [info ] [Thread-2  ]: 2 of 6 OK created sql view model intermediate.int_sap_invoices_deduped ......... [[32mSUCCESS 1[0m in 2.73s]
+[0m10:51:59.133831 [debug] [Thread-2  ]: Finished running node model.tko_trial.int_sap_invoices_deduped
+[0m10:51:59.135831 [debug] [Thread-4  ]: Began running node model.tko_trial.int_invoice_rights
+[0m10:51:59.136990 [debug] [Thread-5  ]: Began running node model.tko_trial.int_invoice_technical
+[0m10:51:59.135831 [info ] [Thread-4  ]: 3 of 6 START sql view model intermediate.int_invoice_rights .................... [RUN]
+[0m10:51:59.137991 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_rights'
+[0m10:51:59.136990 [info ] [Thread-5  ]: 4 of 6 START sql view model intermediate.int_invoice_technical ................. [RUN]
+[0m10:51:59.138632 [debug] [Thread-4  ]: Began compiling node model.tko_trial.int_invoice_rights
+[0m10:51:59.138632 [debug] [Thread-5  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_technical'
+[0m10:51:59.144651 [debug] [Thread-4  ]: Writing injected SQL for node "model.tko_trial.int_invoice_rights"
+[0m10:51:59.144651 [debug] [Thread-5  ]: Began compiling node model.tko_trial.int_invoice_technical
+[0m10:51:59.150650 [debug] [Thread-5  ]: Writing injected SQL for node "model.tko_trial.int_invoice_technical"
+[0m10:51:59.154180 [debug] [Thread-4  ]: Began executing node model.tko_trial.int_invoice_rights
+[0m10:51:59.155314 [debug] [Thread-5  ]: Began executing node model.tko_trial.int_invoice_technical
+[0m10:51:59.157742 [debug] [Thread-4  ]: Writing runtime sql for node "model.tko_trial.int_invoice_rights"
+[0m10:51:59.157742 [debug] [Thread-5  ]: Writing runtime sql for node "model.tko_trial.int_invoice_technical"
+[0m10:51:59.157742 [debug] [Thread-5  ]: Using snowflake connection "model.tko_trial.int_invoice_technical"
+[0m10:51:59.170754 [debug] [Thread-5  ]: On model.tko_trial.int_invoice_technical: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_technical
+  
+  
+  
+  
+  as (
+    
+
+WITH tech_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderInvoiceDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'T' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    'N/A' AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) AS InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Technical' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END AS CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE) AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM tech_source r
+JOIN MediaDMStaging.dbo.OrderInvoice ri ON ri.Id = r.OrderInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.FeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_technical"} */;
+[0m10:51:59.170754 [debug] [Thread-4  ]: Using snowflake connection "model.tko_trial.int_invoice_rights"
+[0m10:51:59.170754 [debug] [Thread-5  ]: Opening a new connection, currently in state init
+[0m10:51:59.170754 [debug] [Thread-4  ]: On model.tko_trial.int_invoice_rights: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_rights
+  
+  
+  
+  
+  as (
+    
+
+WITH rights_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderRightsInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.SAPLineItemNumber,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderRightsInvoiceOrderDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'R' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    COALESCE(r.SAPLineItemNumber, 'N/A') AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) as InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Rights' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END as CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE, '1900-01-01') AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM rights_source r
+JOIN MediaDMStaging.dbo.OrderRightsInvoice ri ON ri.Id = r.OrderRightsInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.RightsFeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_rights"} */;
+[0m10:51:59.170754 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m10:52:01.700668 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.532 seconds
+[0m10:52:01.706874 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C5F6700>]}
+[0m10:52:01.708882 [info ] [Thread-4  ]: 3 of 6 OK created sql view model intermediate.int_invoice_rights ............... [[32mSUCCESS 1[0m in 2.57s]
+[0m10:52:01.708882 [debug] [Thread-4  ]: Finished running node model.tko_trial.int_invoice_rights
+[0m10:52:02.402074 [debug] [Thread-5  ]: SQL status: SUCCESS 1 in 3.243 seconds
+[0m10:52:02.418400 [debug] [Thread-5  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C5D34C0>]}
+[0m10:52:02.418400 [info ] [Thread-5  ]: 4 of 6 OK created sql view model intermediate.int_invoice_technical ............ [[32mSUCCESS 1[0m in 3.28s]
+[0m10:52:02.418400 [debug] [Thread-5  ]: Finished running node model.tko_trial.int_invoice_technical
+[0m10:52:02.418400 [debug] [Thread-3  ]: Began running node model.tko_trial.dim_invoice_v
+[0m10:52:02.418400 [info ] [Thread-3  ]: 5 of 6 START sql view model DEV.dim_invoice_v .................................. [RUN]
+[0m10:52:02.418400 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.tko_trial.dim_invoice_v'
+[0m10:52:02.418400 [debug] [Thread-3  ]: Began compiling node model.tko_trial.dim_invoice_v
+[0m10:52:02.418400 [debug] [Thread-3  ]: Writing injected SQL for node "model.tko_trial.dim_invoice_v"
+[0m10:52:02.431971 [debug] [Thread-3  ]: Began executing node model.tko_trial.dim_invoice_v
+[0m10:52:02.436946 [debug] [Thread-3  ]: Using snowflake connection "model.tko_trial.dim_invoice_v"
+[0m10:52:02.436946 [debug] [Thread-3  ]: On model.tko_trial.dim_invoice_v: select * from (
+        
+
+WITH combined_invoices AS (
+    -- 1. Rights Invoices (Prefix 'R')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_rights
+    
+    UNION ALL
+    
+    -- 2. Technical Invoices (Prefix 'T')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_technical
+    
+    UNION ALL
+    
+    -- 3. Default/Dummy Rows (R-1, T-1, -1)
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_defaults
+)
+
+SELECT 
+    InvoiceKey,
+    SOLItem,
+    BillingCode,
+    InvoiceCategory,
+    InvoiceStatus,
+    InterfaceStatus,
+    FeeType,
+    OrderHeaderId,
+    OrderDetailId,
+    InstallmentNo,
+    CurrencyCode,
+    ProjectionYear,
+    SAPLineItemNumber,
+    SAPSalesOrderNumber,
+    InvoiceDueDate,
+    SAPInvoiceCreatedDate,
+    SAPDocumentDate,
+    InvoiceUpdatedDate,
+    InvoiceInstructions,
+    InvoiceDescription,
+    InvoiceReferenceNumber,
+    RightsTechIndicator,
+    CancellationStatus,
+    Address1,
+    Address2,
+    PostalCode,
+    City,
+    Region,
+    Country,
+    AccountingDocumentNumber,
+    ClearingDocumentNumber,
+    ClearingDocumentDate,
+    SOLNumber,
+    SAP_BILLING_STATUS,
+    IsDataMartDueDate,
+    IssueSite,
+    BillingCompanyId,
+    BillingCompany,
+    CompanyCode,
+    InvoiceProcessedDate,
+    BillingType,
+    VAT,
+    WHT,
+    
+    -- Hash Key Generation using the macro
+    
+    -- Concatenates all relevant dimension columns and hashes them to fingerprint the row
+    -- Uses standard Snowflake MD5 and NULL handling
+    MD5(
+        CONCAT(
+            COALESCE(CAST(InvoiceKey AS VARCHAR), ''), '|',
+            COALESCE(CAST(SOLItem AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceCategory AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(InterfaceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(FeeType AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderHeaderId AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderDetailId AS VARCHAR), ''), '|',
+            COALESCE(CAST(InstallmentNo AS VARCHAR), ''), '|',
+            COALESCE(CAST(CurrencyCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(ProjectionYear AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPLineItemNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPSalesOrderNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceDueDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPInvoiceCreatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(InvoiceUpdatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(InvoiceInstructions AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceDescription AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceReferenceNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(RightsTechIndicator AS VARCHAR), ''), '|',
+            COALESCE(CAST(CancellationStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address1 AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address2 AS VARCHAR), ''), '|',
+            COALESCE(CAST(PostalCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(City AS VARCHAR), ''), '|',
+            COALESCE(CAST(Region AS VARCHAR), ''), '|',
+            COALESCE(CAST(Country AS VARCHAR), ''), '|',
+            COALESCE(CAST(AccountingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(ClearingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(ClearingDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(SOLNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAP_BILLING_STATUS AS VARCHAR), ''), '|',
+            COALESCE(CAST(IsDataMartDueDate AS VARCHAR), ''), '|',
+            COALESCE(CAST(IssueSite AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompanyId AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompany AS VARCHAR), ''), '|',
+            COALESCE(CAST(CompanyCode AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceProcessedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(BillingType AS VARCHAR), ''), '|',
+            COALESCE(CAST(VAT AS VARCHAR), ''), '|',
+            COALESCE(CAST(WHT AS VARCHAR), '')
+        )
+    )
+ AS HashKey,
+    
+    NULL AS DeletedOn
+
+FROM combined_invoices
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice_v"} */
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice_v"} */
+[0m10:52:02.436946 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m10:52:06.978332 [debug] [Thread-3  ]: SQL status: SUCCESS 0 in 4.542 seconds
+[0m10:52:06.990944 [warn ] [Thread-3  ]: Detected columns with numeric type and unspecified precision/scale, this can lead to unintended rounding: ['installmentno', 'projectionyear', 'vat', 'wht']`
+[0m10:52:07.005354 [debug] [Thread-3  ]: Using snowflake connection "model.tko_trial.dim_invoice_v"
+[0m10:52:07.005354 [debug] [Thread-3  ]: On model.tko_trial.dim_invoice_v: select * from (
+        select
+    
+      
+    cast(null as varchar)
+     as invoicekey, 
+      
+    cast(null as varchar)
+     as solitem, 
+      
+    cast(null as varchar)
+     as billingcode, 
+      
+    cast(null as varchar)
+     as invoicecategory, 
+      
+    cast(null as varchar)
+     as invoicestatus, 
+      
+    cast(null as varchar)
+     as interfacestatus, 
+      
+    cast(null as varchar)
+     as feetype, 
+      
+    cast(null as varchar)
+     as orderheaderid, 
+      
+    cast(null as varchar)
+     as orderdetailid, 
+      
+    cast(null as number)
+     as installmentno, 
+      
+    cast(null as varchar)
+     as currencycode, 
+      
+    cast(null as number)
+     as projectionyear, 
+      
+    cast(null as varchar)
+     as saplineitemnumber, 
+      
+    cast(null as varchar)
+     as sapsalesordernumber, 
+      
+    cast(null as date)
+     as invoiceduedate, 
+      
+    cast(null as date)
+     as sapinvoicecreateddate, 
+      
+    cast(null as date)
+     as sapdocumentdate, 
+      
+    cast(null as date)
+     as invoiceupdateddate, 
+      
+    cast(null as varchar)
+     as invoiceinstructions, 
+      
+    cast(null as varchar)
+     as invoicedescription, 
+      
+    cast(null as varchar)
+     as invoicereferencenumber, 
+      
+    cast(null as varchar)
+     as rightstechindicator, 
+      
+    cast(null as varchar)
+     as cancellationstatus, 
+      
+    cast(null as varchar)
+     as address1, 
+      
+    cast(null as varchar)
+     as address2, 
+      
+    cast(null as varchar)
+     as postalcode, 
+      
+    cast(null as varchar)
+     as city, 
+      
+    cast(null as varchar)
+     as region, 
+      
+    cast(null as varchar)
+     as country, 
+      
+    cast(null as varchar)
+     as accountingdocumentnumber, 
+      
+    cast(null as varchar)
+     as clearingdocumentnumber, 
+      
+    cast(null as date)
+     as clearingdocumentdate, 
+      
+    cast(null as varchar)
+     as solnumber, 
+      
+    cast(null as varchar)
+     as sap_billing_status, 
+      
+    cast(null as varchar)
+     as isdatamartduedate, 
+      
+    cast(null as varchar)
+     as issuesite, 
+      
+    cast(null as varchar)
+     as billingcompanyid, 
+      
+    cast(null as varchar)
+     as billingcompany, 
+      
+    cast(null as varchar)
+     as companycode, 
+      
+    cast(null as date)
+     as invoiceprocesseddate, 
+      
+    cast(null as varchar)
+     as billingtype, 
+      
+    cast(null as number)
+     as vat, 
+      
+    cast(null as number)
+     as wht, 
+      
+    cast(null as varchar)
+     as hashkey, 
+      
+    cast(null as timestamp_ntz)
+     as deletedon
+    ) as __dbt_sbq
+    where false
+    limit 0
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice_v"} */
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice_v"} */
+[0m10:52:07.067021 [debug] [Thread-3  ]: SQL status: SUCCESS 0 in 0.071 seconds
+[0m10:52:07.098609 [debug] [Thread-3  ]: Compilation Error in model dim_invoice_v (models\marts\dim_invoice_v.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name      | definition_type | contract_type | mismatch_reason    |
+  | ---------------- | --------------- | ------------- | ------------------ |
+  | BILLINGCOMPANYID | FIXED           | TEXT          | data type mismatch |
+  | DELETEDON        | TEXT            | TIMESTAMP_NTZ | data type mismatch |
+  | ORDERDETAILID    | FIXED           | TEXT          | data type mismatch |
+  | ORDERHEADERID    | FIXED           | TEXT          | data type mismatch |
+  | SOLITEM          | FIXED           | TEXT          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro snowflake__create_view_as_with_temp_flag (macros\relations\view\create.sql)
+  > called by macro snowflake__create_view_as (macros\relations\view\create.sql)
+  > called by macro create_view_as (macros\relations\view\create.sql)
+  > called by macro default__get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro statement (macros\etc\statement.sql)
+  > called by macro snowflake__create_or_replace_view (macros\relations\view\create.sql)
+  > called by macro materialization_view_snowflake (macros\materializations\view.sql)
+  > called by model dim_invoice_v (models\marts\dim_invoice_v.sql)
+[0m10:52:07.100260 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '90fd697a-823e-42d1-8b90-1064eafe2d93', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663C613A60>]}
+[0m10:52:07.100642 [error] [Thread-3  ]: 5 of 6 ERROR creating sql view model DEV.dim_invoice_v ......................... [[31mERROR[0m in 4.68s]
+[0m10:52:07.100642 [debug] [Thread-3  ]: Finished running node model.tko_trial.dim_invoice_v
+[0m10:52:07.100642 [debug] [Thread-9  ]: Marking all children of 'model.tko_trial.dim_invoice_v' to be skipped because of status 'error'.  Reason: Compilation Error in model dim_invoice_v (models\marts\dim_invoice_v.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name      | definition_type | contract_type | mismatch_reason    |
+  | ---------------- | --------------- | ------------- | ------------------ |
+  | BILLINGCOMPANYID | FIXED           | TEXT          | data type mismatch |
+  | DELETEDON        | TEXT            | TIMESTAMP_NTZ | data type mismatch |
+  | ORDERDETAILID    | FIXED           | TEXT          | data type mismatch |
+  | ORDERHEADERID    | FIXED           | TEXT          | data type mismatch |
+  | SOLITEM          | FIXED           | TEXT          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro snowflake__create_view_as_with_temp_flag (macros\relations\view\create.sql)
+  > called by macro snowflake__create_view_as (macros\relations\view\create.sql)
+  > called by macro create_view_as (macros\relations\view\create.sql)
+  > called by macro default__get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro statement (macros\etc\statement.sql)
+  > called by macro snowflake__create_or_replace_view (macros\relations\view\create.sql)
+  > called by macro materialization_view_snowflake (macros\materializations\view.sql)
+  > called by model dim_invoice_v (models\marts\dim_invoice_v.sql).
+[0m10:52:07.100642 [debug] [Thread-2  ]: Began running node model.tko_trial.dim_invoice
+[0m10:52:07.100642 [info ] [Thread-2  ]: 6 of 6 SKIP relation DEV.dim_invoice ........................................... [[33mSKIP[0m]
+[0m10:52:07.100642 [debug] [Thread-2  ]: Finished running node model.tko_trial.dim_invoice
+[0m10:52:07.100642 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:52:07.100642 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING' was left open.
+[0m10:52:07.100642 [debug] [MainThread]: On list_MEDIADMSTAGING: Close
+[0m10:52:07.193301 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING' was left open.
+[0m10:52:07.193301 [debug] [MainThread]: On list_MEDIADMSTAGING: Close
+[0m10:52:07.276816 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_DEV' was left open.
+[0m10:52:07.276816 [debug] [MainThread]: On list_MEDIADMSTAGING_DEV: Close
+[0m10:52:07.354709 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_intermediate' was left open.
+[0m10:52:07.356717 [debug] [MainThread]: On list_MEDIADMSTAGING_intermediate: Close
+[0m10:52:07.438557 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_defaults' was left open.
+[0m10:52:07.438557 [debug] [MainThread]: On model.tko_trial.int_invoice_defaults: Close
+[0m10:52:07.524385 [debug] [MainThread]: Connection 'model.tko_trial.int_sap_invoices_deduped' was left open.
+[0m10:52:07.524385 [debug] [MainThread]: On model.tko_trial.int_sap_invoices_deduped: Close
+[0m10:52:07.600709 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_rights' was left open.
+[0m10:52:07.600709 [debug] [MainThread]: On model.tko_trial.int_invoice_rights: Close
+[0m10:52:07.689409 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_technical' was left open.
+[0m10:52:07.689409 [debug] [MainThread]: On model.tko_trial.int_invoice_technical: Close
+[0m10:52:07.766817 [debug] [MainThread]: Connection 'model.tko_trial.dim_invoice_v' was left open.
+[0m10:52:07.766817 [debug] [MainThread]: On model.tko_trial.dim_invoice_v: Close
+[0m10:52:07.850470 [info ] [MainThread]: 
+[0m10:52:07.850470 [info ] [MainThread]: Finished running 1 dynamic table model, 5 view models in 0 hours 0 minutes and 17.69 seconds (17.69s).
+[0m10:52:07.854633 [debug] [MainThread]: Command end result
+[0m10:52:07.885525 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m10:52:07.887528 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m10:52:07.904734 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\GaneshL\Documents\poc\tko_trial\target\run_results.json
+[0m10:52:07.904734 [info ] [MainThread]: 
+[0m10:52:07.904734 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m10:52:07.904734 [info ] [MainThread]: 
+[0m10:52:07.904734 [error] [MainThread]: [31mFailure in model dim_invoice_v (models\marts\dim_invoice_v.sql)[0m
+[0m10:52:07.904734 [error] [MainThread]:   Compilation Error in model dim_invoice_v (models\marts\dim_invoice_v.sql)
+  This model has an enforced contract that failed.
+  Please ensure the name, data_type, and number of columns in your contract match the columns in your model's definition.
+  
+  | column_name      | definition_type | contract_type | mismatch_reason    |
+  | ---------------- | --------------- | ------------- | ------------------ |
+  | BILLINGCOMPANYID | FIXED           | TEXT          | data type mismatch |
+  | DELETEDON        | TEXT            | TIMESTAMP_NTZ | data type mismatch |
+  | ORDERDETAILID    | FIXED           | TEXT          | data type mismatch |
+  | ORDERHEADERID    | FIXED           | TEXT          | data type mismatch |
+  | SOLITEM          | FIXED           | TEXT          | data type mismatch |
+  
+  
+  > in macro assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro default__get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro get_assert_columns_equivalent (macros\relations\column\columns_spec_ddl.sql)
+  > called by macro snowflake__create_view_as_with_temp_flag (macros\relations\view\create.sql)
+  > called by macro snowflake__create_view_as (macros\relations\view\create.sql)
+  > called by macro create_view_as (macros\relations\view\create.sql)
+  > called by macro default__get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro get_create_view_as_sql (macros\relations\view\create.sql)
+  > called by macro statement (macros\etc\statement.sql)
+  > called by macro snowflake__create_or_replace_view (macros\relations\view\create.sql)
+  > called by macro materialization_view_snowflake (macros\materializations\view.sql)
+  > called by model dim_invoice_v (models\marts\dim_invoice_v.sql)
+[0m10:52:07.904734 [info ] [MainThread]: 
+[0m10:52:07.904734 [info ] [MainThread]:   compiled code at target\compiled\tko_trial\models\marts\dim_invoice_v.sql
+[0m10:52:07.904734 [info ] [MainThread]: 
+[0m10:52:07.904734 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=1 SKIP=1 NO-OP=0 TOTAL=6
+[0m10:52:07.904734 [debug] [MainThread]: Command `dbt run` failed at 10:52:07.904734 after 20.40 seconds
+[0m10:52:07.904734 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026636D00F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663B283FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002663B283F70>]}
+[0m10:52:07.904734 [debug] [MainThread]: Flushing usage events
+[0m10:52:08.999468 [debug] [MainThread]: An error was encountered while trying to flush usage events
