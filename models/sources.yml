@@ -34,6 +34,19 @@ sources:
       - name: Customer_aud
       - name: CustomerContact
       - name: RightsSelectionEx
+      - name: Contract
+      - name: W_OrderRightsInvoiceOrderDetailAudit
+      - name: W_OrderInvoiceDetailAudit
+      - name: Projection_aud
+      - name: TerritorySelectionEx
+      - name: LanguageSelectionEx
+      - name: GeneralType_lu
+      - name: DeliveryFormat_lu
+      - name: TapeFormat_lu
+      - name: DeliveryMethod_lu
+      - name: CustomerType2_lu
+      - name: VideoStandard_lu
+      - name: User
       # - name: 
       # - name: 
       # - name: 

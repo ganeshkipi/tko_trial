@@ -4,7 +4,7 @@ WITH rights_source AS (
     SELECT 
         r.Id AS RecordId,
         r.OrderRightsInvoiceId,
-        r.OrderDetailId,
+        r.ID,
         r.VatCodeId,
         r.WithHoldingTaxRecordId,
         r.PseudoInvoicingTypeId,
@@ -36,7 +36,7 @@ SELECT
     -- 8. OrderHeaderId
     COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
     -- 9. OrderDetailId
-    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    COALESCE(r.ID, -1) AS OrderDetailId,
     -- 10. InstallmentNo
     COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
     -- 11. CurrencyCode
@@ -130,7 +130,7 @@ LEFT JOIN {{ source('media_dm_staging', 'Currency_lu') }} c ON c.Id = ri.Currenc
 LEFT JOIN {{ source('media_dm_staging', 'CustomerAddress') }} ca ON ri.CustomerAddressId = ca.Id
 LEFT JOIN {{ source('media_dm_staging', 'TerritoryRegion_lu') }} tr ON ca.TerritoryRegionId = tr.Id
 LEFT JOIN {{ source('media_dm_staging', 'Territory_lu') }} ti ON ca.TerritoryId = ti.Id
-INNER JOIN {{ source('media_dm_staging', 'OrderDetail') }} od ON r.OrderDetailId = od.Id
+INNER JOIN {{ source('media_dm_staging', 'OrderDetail') }} od ON r.ID = od.Id
 LEFT JOIN {{ source('media_dm_staging', 'BillingCompany_lu') }} bc ON bc.Id = od.BillingCompanyId
 LEFT JOIN {{ source('media_dm_staging', 'IssueSite_lu') }} isl ON isl.Id = bc.IssueSiteId
 LEFT JOIN {{ source('media_dm_staging', 'VatCodes') }} vc ON vc.Id = r.VatCodeId

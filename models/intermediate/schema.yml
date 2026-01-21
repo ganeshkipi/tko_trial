@@ -1,0 +1,425 @@
+version: 2
+
+models:
+  - name: int_sap_invoices_deduped
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      - name: SOL_NUMBER
+        data_type: varchar
+      - name: SAP_INVOICE
+        data_type: varchar
+      - name: SAP_ACCTG_DOC
+        data_type: varchar
+      - name: SAP_CLEAR_DOC
+        data_type: varchar
+      - name: SAP_CLEAR_DATE
+        data_type: date
+      - name: SAP_INV_DATE
+        data_type: date
+      - name: SAP_INV_DATE_FIRST
+        data_type: date
+      - name: InvoiceId
+        data_type: integer
+      - name: InvoiceType
+        data_type: varchar
+      - name: SAP_BILLING_STATUS
+        data_type: varchar
+      - name: UpdatedDate
+        data_type: timestamp
+      - name: Id
+        data_type: integer
+      - name: RowNumber
+        data_type: integer
+
+  - name: int_invoice_rights
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns: &invoice_columns
+      - name: InvoiceKey
+        data_type: varchar
+      - name: SOLItem
+        data_type: integer
+      - name: BillingCode
+        data_type: varchar
+      - name: InvoiceCategory
+        data_type: varchar
+      - name: InvoiceStatus
+        data_type: varchar
+      - name: InterfaceStatus
+        data_type: varchar
+      - name: FeeType
+        data_type: varchar
+      - name: OrderHeaderId
+        data_type: integer
+      - name: OrderDetailId
+        data_type: integer
+      - name: InstallmentNo
+        data_type: integer
+      - name: CurrencyCode
+        data_type: varchar
+      - name: ProjectionYear
+        data_type: integer
+      - name: SAPLineItemNumber
+        data_type: varchar
+      - name: SAPSalesOrderNumber
+        data_type: varchar
+      - name: InvoiceDueDate
+        data_type: date
+      - name: SAPInvoiceCreatedDate
+        data_type: date
+      - name: SAPDocumentDate
+        data_type: date
+      - name: InvoiceUpdatedDate
+        data_type: date
+      - name: InvoiceInstructions
+        data_type: varchar
+      - name: InvoiceDescription
+        data_type: varchar
+      - name: InvoiceReferenceNumber
+        data_type: varchar
+      - name: RightsTechIndicator
+        data_type: varchar
+      - name: CancellationStatus
+        data_type: varchar
+      - name: Address1
+        data_type: varchar
+      - name: Address2
+        data_type: varchar
+      - name: PostalCode
+        data_type: varchar
+      - name: City
+        data_type: varchar
+      - name: Region
+        data_type: varchar
+      - name: Country
+        data_type: varchar
+      - name: AccountingDocumentNumber
+        data_type: varchar
+      - name: ClearingDocumentNumber
+        data_type: varchar
+      - name: ClearingDocumentDate
+        data_type: date
+      - name: SOLNumber
+        data_type: varchar
+      - name: SAP_BILLING_STATUS
+        data_type: varchar
+      - name: IsDataMartDueDate
+        data_type: varchar
+      - name: IssueSite
+        data_type: varchar
+      - name: BillingCompanyId
+        data_type: integer
+      - name: BillingCompany
+        data_type: varchar
+      - name: CompanyCode
+        data_type: varchar
+      - name: InvoiceProcessedDate
+        data_type: date
+      - name: BillingType
+        data_type: varchar
+      - name: VAT
+        data_type: DECIMAL(10,2)
+      - name: WHT
+        data_type: DECIMAL(10,2)
+
+  - name: int_invoice_technical
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns: *invoice_columns
+
+  - name: int_invoice_defaults
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns: *invoice_columns
+
+  - name: int_dim_invoice
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      # Inherits all invoice columns plus HashKey and DeletedOn
+      - name: InvoiceKey
+        data_type: varchar
+      - name: SOLItem
+        data_type: integer
+      - name: BillingCode
+        data_type: varchar
+      - name: InvoiceCategory
+        data_type: varchar
+      - name: InvoiceStatus
+        data_type: varchar
+      - name: InterfaceStatus
+        data_type: varchar
+      - name: FeeType
+        data_type: varchar
+      - name: OrderHeaderId
+        data_type: integer
+      - name: OrderDetailId
+        data_type: integer
+      - name: InstallmentNo
+        data_type: integer
+      - name: CurrencyCode
+        data_type: varchar
+      - name: ProjectionYear
+        data_type: integer
+      - name: SAPLineItemNumber
+        data_type: varchar
+      - name: SAPSalesOrderNumber
+        data_type: varchar
+      - name: InvoiceDueDate
+        data_type: date
+      - name: SAPInvoiceCreatedDate
+        data_type: date
+      - name: SAPDocumentDate
+        data_type: date
+      - name: InvoiceUpdatedDate
+        data_type: date
+      - name: InvoiceInstructions
+        data_type: varchar
+      - name: InvoiceDescription
+        data_type: varchar
+      - name: InvoiceReferenceNumber
+        data_type: varchar
+      - name: RightsTechIndicator
+        data_type: varchar
+      - name: CancellationStatus
+        data_type: varchar
+      - name: Address1
+        data_type: varchar
+      - name: Address2
+        data_type: varchar
+      - name: PostalCode
+        data_type: varchar
+      - name: City
+        data_type: varchar
+      - name: Region
+        data_type: varchar
+      - name: Country
+        data_type: varchar
+      - name: AccountingDocumentNumber
+        data_type: varchar
+      - name: ClearingDocumentNumber
+        data_type: varchar
+      - name: ClearingDocumentDate
+        data_type: date
+      - name: SOLNumber
+        data_type: varchar
+      - name: SAP_BILLING_STATUS
+        data_type: varchar
+      - name: IsDataMartDueDate
+        data_type: varchar
+      - name: IssueSite
+        data_type: varchar
+      - name: BillingCompanyId
+        data_type: integer
+      - name: BillingCompany
+        data_type: varchar
+      - name: CompanyCode
+        data_type: varchar
+      - name: InvoiceProcessedDate
+        data_type: date
+      - name: BillingType
+        data_type: varchar
+      - name: VAT
+        data_type: DECIMAL(10,2)
+      - name: WHT
+        data_type: DECIMAL(10,2)
+      - name: HashKey
+        data_type: varchar
+      - name: DeletedOn
+        data_type: varchar
+
+  - name: int_customer_ghost_records
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      - name: CustomerId
+        data_type: integer
+      - name: CustomerNo
+        data_type: integer
+      - name: CustomerFullName
+        data_type: varchar
+      - name: ShortName
+        data_type: varchar
+      - name: ProjectionTerritoryId
+        data_type: integer
+      - name: RightsSelectionId
+        data_type: integer
+      - name: TerritorySelectionId
+        data_type: integer
+      - name: LanguageSelectionId
+        data_type: integer
+      - name: NumberOfTransmissions
+        data_type: integer
+      - name: GeneralTypeLiveId
+        data_type: integer
+      - name: GeneralTypeProducedId
+        data_type: integer
+      - name: DeliveryFormatId
+        data_type: integer
+      - name: FormatTypeId
+        data_type: integer
+      - name: DeliveryMethodId
+        data_type: integer
+      - name: DetailComment
+        data_type: varchar
+      - name: CustomerType2Id
+        data_type: integer
+      - name: AudioConfig
+        data_type: varchar
+      - name: BlockedDate
+        data_type: date
+      - name: StandardId
+        data_type: integer
+      - name: CreatedDate
+        data_type: timestamp
+      - name: CreatedBy
+        data_type: integer
+
+  - name: int_customer_unblocking_history
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      - name: CustomerId
+        data_type: integer
+      - name: FirstUnblockedDate
+        data_type: timestamp
+      - name: FirstUnblockedBy
+        data_type: integer
+      - name: UnblockedDate
+        data_type: timestamp
+      - name: UnblockedBy
+        data_type: integer
+
+  - name: int_customer_airlines_agg
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      - name: CustomerId
+        data_type: integer
+      - name: CustomerAddressAirline
+        data_type: varchar
+      - name: CustomerInFlightDefaultsAirline
+        data_type: varchar
+      - name: CustomerInFlightDefaultsCurrency
+        data_type: varchar
+      - name: CustomerInFlightRightsAirline
+        data_type: varchar
+      - name: CustomerContactAirline
+        data_type: varchar
+
+  - name: int_customer_contexts
+    config:
+      materialized: view
+      contract:
+        enforced: true
+    columns:
+      - name: CustomerId
+        data_type: integer
+      - name: ContactId
+        data_type: integer
+      - name: CustomerAddressId
+        data_type: integer
+
+  - name: dim_customer
+    config:
+      materialized: dynamic_table
+      contract:
+        enforced: true
+    columns:
+      - name: CustomerKey
+        data_type: varchar
+      - name: SourceCustomerId
+        data_type: integer
+      - name: SourceContactId
+        data_type: integer
+      - name: SourceCustomerAddressId
+        data_type: integer
+      - name: CustomerNo
+        data_type: integer
+      - name: CustomerName
+        data_type: varchar
+      - name: CustomerShortName
+        data_type: varchar
+      - name: ContactName
+        data_type: varchar
+      - name: ProjectionTerritory
+        data_type: varchar
+      - name: SAPCustomerNumber
+        data_type: varchar
+      - name: SAPPayerNumber
+        data_type: varchar
+      - name: SOLId
+        data_type: integer
+      - name: RightsSelection
+        data_type: varchar
+      - name: TerritorySelection
+        data_type: varchar
+      - name: LanguageSelection
+        data_type: varchar
+      - name: NumberOfTransmissions
+        data_type: integer
+      - name: NumberOfTransmissionsName
+        data_type: varchar
+      - name: GeneralTypeLive
+        data_type: varchar
+      - name: GeneralTypeProduced
+        data_type: varchar
+      - name: DeliveryFormat
+        data_type: varchar
+      - name: FrameRate
+        data_type: varchar
+      - name: DeliveryMethod
+        data_type: varchar
+      - name: Comment
+        data_type: varchar
+      - name: CustomerType
+        data_type: varchar
+      - name: AudioConfig
+        data_type: varchar
+      - name: CustomerState
+        data_type: varchar
+      - name: FrameResolution
+        data_type: varchar
+      - name: CustomerAddressAirline
+        data_type: varchar
+      - name: CustomerInFlightDefaultsCurrency
+        data_type: varchar
+      - name: CustomerInFlightDefaultsAirline
+        data_type: varchar
+      - name: CustomerInFlightRightsAirline
+        data_type: varchar
+      - name: CustomerContactAirline
+        data_type: varchar
+      - name: FirstUnblockedDate
+        data_type: timestamp
+      - name: FirstUnblockedBy
+        data_type: varchar
+      - name: UnblockedDate
+        data_type: timestamp
+      - name: UnblockedBy
+        data_type: varchar
+      - name: CreatedDate
+        data_type: timestamp
+      - name: CreatedBy
+        data_type: varchar
+      - name: HashKey
+        data_type: varchar
+      - name: DeletedOn
+        data_type: varchar
