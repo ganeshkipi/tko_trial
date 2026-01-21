@@ -1,0 +1,43 @@
+version: 2
+sources:
+  - name: media_dm_staging
+    database: MediaDMStaging
+    schema: dbo
+    tables:
+      - name: SAPImportedInvoices
+      - name: OrderRightsInvoice
+      - name: OrderRightsInvoiceOrderDetail
+      - name: OrderInvoice
+      - name: OrderInvoiceDetail
+      - name: OrderHeader
+      - name: OrderDetail
+      - name: InvoiceStatus_lu
+      - name: Fee_lu
+      - name: Currency_lu
+      - name: CustomerAddress
+      - name: TerritoryRegion_lu
+      - name: Territory_lu
+      - name: BillingCompany_lu
+      - name: IssueSite_lu
+      - name: VatCodes
+      - name: WithholdingTaxRecord
+      - name: PseudoInvoicingType_lu
+      - name: CustomerAddressAirline
+      - name: CustomerContactAirline
+      - name: CustomerInFlightDefaults
+      - name: CustomerInFlightDefaultsAirline
+      - name: CustomerInFlightRights
+      - name: CustomerInFlightRightsAirline
+      - name: Rights_lu
+      - name: Customer
+      - name: InternalAllocation
+      - name: Customer_aud
+      - name: CustomerContact
+      - name: RightsSelectionEx
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 
+      # - name: 

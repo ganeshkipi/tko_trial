@@ -1,0 +1,1059 @@
+[0m12:10:11.747148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001891E010FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189202B6C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000189202B6EB0>]}
+
+
+============================== 12:10:11.762858 | 8ace2a1b-8b11-4594-9063-dec82b52b765 ==============================
+[0m12:10:11.762858 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:10:11.762858 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'no_print': 'None', 'log_format': 'default', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'partial_parse': 'True', 'introspect': 'True', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'warn_error': 'None', 'write_json': 'True', 'target_path': 'None', 'quiet': 'False', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:10:11.890845 [info ] [MainThread]: dbt version: 1.10.17
+[0m12:10:11.890845 [info ] [MainThread]: python version: 3.9.6
+[0m12:10:11.890845 [info ] [MainThread]: python path: c:\users\ganeshl\documents\poc\env\scripts\python.exe
+[0m12:10:11.890845 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m12:10:11.890845 [info ] [MainThread]: Using profiles dir at C:\Users\GaneshL\.dbt
+[0m12:10:11.890845 [info ] [MainThread]: Using profiles.yml file at C:\Users\GaneshL\.dbt\profiles.yml
+[0m12:10:11.904909 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\GaneshL\Documents\poc\tko_trial\dbt_project.yml
+[0m12:10:12.002418 [info ] [MainThread]: Configuration:
+[0m12:10:12.003555 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:10:12.004688 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:10:12.004688 [info ] [MainThread]: Required dependencies:
+[0m12:10:12.005686 [debug] [MainThread]: Executing "git --help"
+[0m12:10:12.253564 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:10:12.253564 [debug] [MainThread]: STDERR: "b''"
+[0m12:10:12.253564 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:10:12.253564 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:10:12.253564 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:10:12.253564 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'tko_trial'
+
+
+[0m12:10:12.253564 [debug] [MainThread]: Command `dbt debug` failed at 12:10:12.253564 after 0.78 seconds
+[0m12:10:12.253564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001891E010FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001892004B9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018920339520>]}
+[0m12:10:12.253564 [debug] [MainThread]: Flushing usage events
+[0m12:10:13.188382 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:10.607393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677BEC9040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677E165BE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677E165F40>]}
+
+
+============================== 12:11:10.613993 | 628f1053-9a7e-4af6-a574-d9d273f43c60 ==============================
+[0m12:11:10.613993 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:11:10.613993 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:11:10.657683 [info ] [MainThread]: dbt version: 1.10.17
+[0m12:11:10.658677 [info ] [MainThread]: python version: 3.9.6
+[0m12:11:10.658677 [info ] [MainThread]: python path: c:\users\ganeshl\documents\poc\env\scripts\python.exe
+[0m12:11:10.659677 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m12:11:10.667204 [info ] [MainThread]: target not specified in profile 'tko_trial', using 'default'
+[0m12:11:10.667204 [info ] [MainThread]: Using profiles dir at C:\Users\GaneshL\.dbt
+[0m12:11:10.668209 [info ] [MainThread]: Using profiles.yml file at C:\Users\GaneshL\.dbt\profiles.yml
+[0m12:11:10.668209 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\GaneshL\Documents\poc\tko_trial\dbt_project.yml
+[0m12:11:10.762263 [info ] [MainThread]: Configuration:
+[0m12:11:10.763395 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:11:10.763395 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:11:10.764407 [info ] [MainThread]: Required dependencies:
+[0m12:11:10.764407 [debug] [MainThread]: Executing "git --help"
+[0m12:11:10.965173 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:11:10.965173 [debug] [MainThread]: STDERR: "b''"
+[0m12:11:10.965173 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:11:10.965173 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:11:10.965173 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:11:10.965173 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  The profile 'tko_trial' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+
+
+[0m12:11:10.965173 [debug] [MainThread]: Command `dbt debug` failed at 12:11:10.965173 after 0.59 seconds
+[0m12:11:10.965173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677BEC9040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677D883820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001677D248CD0>]}
+[0m12:11:10.965173 [debug] [MainThread]: Flushing usage events
+[0m12:11:11.960863 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:11:50.988739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0EADE0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ED086C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0ED086E50>]}
+
+
+============================== 12:11:50.988739 | a7a92ec1-820e-46e3-a5a3-3029f04d883e ==============================
+[0m12:11:50.988739 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:11:50.988739 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'introspect': 'True', 'warn_error': 'None', 'write_json': 'True', 'log_format': 'default', 'no_print': 'None', 'partial_parse': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:11:51.038996 [info ] [MainThread]: dbt version: 1.10.17
+[0m12:11:51.040926 [info ] [MainThread]: python version: 3.9.6
+[0m12:11:51.040926 [info ] [MainThread]: python path: c:\users\ganeshl\documents\poc\env\scripts\python.exe
+[0m12:11:51.041926 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m12:11:52.887646 [info ] [MainThread]: Using profiles dir at C:\Users\GaneshL\.dbt
+[0m12:11:52.887646 [info ] [MainThread]: Using profiles.yml file at C:\Users\GaneshL\.dbt\profiles.yml
+[0m12:11:52.887646 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\GaneshL\Documents\poc\tko_trial\dbt_project.yml
+[0m12:11:52.887646 [info ] [MainThread]: adapter type: snowflake
+[0m12:11:52.887646 [info ] [MainThread]: adapter version: 1.10.2
+[0m12:11:52.989131 [info ] [MainThread]: Configuration:
+[0m12:11:52.989131 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:11:52.989131 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:11:52.989131 [info ] [MainThread]: Required dependencies:
+[0m12:11:52.989131 [debug] [MainThread]: Executing "git --help"
+[0m12:11:53.204834 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:11:53.211455 [debug] [MainThread]: STDERR: "b''"
+[0m12:11:53.211455 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:11:53.211455 [info ] [MainThread]: Connection:
+[0m12:11:53.211455 [info ] [MainThread]:   account: DEVEPAL-ZH41571
+[0m12:11:53.211455 [info ] [MainThread]:   user: ganeshkipi
+[0m12:11:53.211455 [info ] [MainThread]:   database: SNOWFLAKE_SAMPLE_DATA
+[0m12:11:53.211455 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m12:11:53.211455 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m12:11:53.215152 [info ] [MainThread]:   schema: TPCH_SF10
+[0m12:11:53.215152 [info ] [MainThread]:   authenticator: None
+[0m12:11:53.215152 [info ] [MainThread]:   oauth_client_id: None
+[0m12:11:53.215152 [info ] [MainThread]:   query_tag: None
+[0m12:11:53.215152 [info ] [MainThread]:   client_session_keep_alive: False
+[0m12:11:53.215152 [info ] [MainThread]:   host: None
+[0m12:11:53.215152 [info ] [MainThread]:   port: None
+[0m12:11:53.215152 [info ] [MainThread]:   proxy_host: None
+[0m12:11:53.219572 [info ] [MainThread]:   proxy_port: None
+[0m12:11:53.219572 [info ] [MainThread]:   protocol: None
+[0m12:11:53.220582 [info ] [MainThread]:   connect_retries: 1
+[0m12:11:53.220582 [info ] [MainThread]:   connect_timeout: None
+[0m12:11:53.221741 [info ] [MainThread]:   retry_on_database_errors: False
+[0m12:11:53.222337 [info ] [MainThread]:   retry_all: False
+[0m12:11:53.222337 [info ] [MainThread]:   insecure_mode: False
+[0m12:11:53.222337 [info ] [MainThread]:   reuse_connections: True
+[0m12:11:53.222337 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m12:11:53.222337 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:11:53.734165 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:11:55.221143 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:11:55.221143 [debug] [MainThread]: On debug: select 1 as id
+[0m12:11:55.221143 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:11:58.665449 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.441 seconds
+[0m12:11:58.665449 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:11:58.665449 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:11:58.665449 [debug] [MainThread]: Command `dbt debug` succeeded at 12:11:58.665449 after 7.92 seconds
+[0m12:11:58.676338 [debug] [MainThread]: Connection 'debug' was left open.
+[0m12:11:58.676338 [debug] [MainThread]: On debug: Close
+[0m12:11:58.757978 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0EADE0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0EDDA27C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B0EDE0AE50>]}
+[0m12:11:58.758373 [debug] [MainThread]: Flushing usage events
+[0m12:11:59.634427 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:13:45.675256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE64FF0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE67296C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE67296E50>]}
+
+
+============================== 12:13:45.688897 | 909e0b8c-4dea-49df-b7f7-4e8933cdef0e ==============================
+[0m12:13:45.688897 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:13:45.689891 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'target_path': 'None', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'introspect': 'True', 'warn_error': 'None', 'write_json': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:13:45.721783 [info ] [MainThread]: dbt version: 1.10.17
+[0m12:13:45.721783 [info ] [MainThread]: python version: 3.9.6
+[0m12:13:45.721783 [info ] [MainThread]: python path: c:\users\ganeshl\documents\poc\env\scripts\python.exe
+[0m12:13:45.721783 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m12:13:46.488219 [info ] [MainThread]: Using profiles dir at C:\Users\GaneshL\.dbt
+[0m12:13:46.502924 [info ] [MainThread]: Using profiles.yml file at C:\Users\GaneshL\.dbt\profiles.yml
+[0m12:13:46.503933 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\GaneshL\Documents\poc\tko_trial\dbt_project.yml
+[0m12:13:46.503933 [info ] [MainThread]: adapter type: snowflake
+[0m12:13:46.503933 [info ] [MainThread]: adapter version: 1.10.2
+[0m12:13:46.601423 [info ] [MainThread]: Configuration:
+[0m12:13:46.602996 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:13:46.602996 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:13:46.602996 [info ] [MainThread]: Required dependencies:
+[0m12:13:46.602996 [debug] [MainThread]: Executing "git --help"
+[0m12:13:46.846404 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:13:46.846404 [debug] [MainThread]: STDERR: "b''"
+[0m12:13:46.846404 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:13:46.846404 [info ] [MainThread]: Connection:
+[0m12:13:46.846404 [info ] [MainThread]:   account: DEVEPAL-ZH41571
+[0m12:13:46.846404 [info ] [MainThread]:   user: ganeshkipi
+[0m12:13:46.846404 [info ] [MainThread]:   database: MEDIADMSTAGING
+[0m12:13:46.846404 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m12:13:46.846404 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m12:13:46.846404 [info ] [MainThread]:   schema: dev
+[0m12:13:46.846404 [info ] [MainThread]:   authenticator: None
+[0m12:13:46.846404 [info ] [MainThread]:   oauth_client_id: None
+[0m12:13:46.846404 [info ] [MainThread]:   query_tag: None
+[0m12:13:46.846404 [info ] [MainThread]:   client_session_keep_alive: False
+[0m12:13:46.846404 [info ] [MainThread]:   host: None
+[0m12:13:46.846404 [info ] [MainThread]:   port: None
+[0m12:13:46.846404 [info ] [MainThread]:   proxy_host: None
+[0m12:13:46.853969 [info ] [MainThread]:   proxy_port: None
+[0m12:13:46.853969 [info ] [MainThread]:   protocol: None
+[0m12:13:46.853969 [info ] [MainThread]:   connect_retries: 1
+[0m12:13:46.854979 [info ] [MainThread]:   connect_timeout: None
+[0m12:13:46.855679 [info ] [MainThread]:   retry_on_database_errors: False
+[0m12:13:46.855679 [info ] [MainThread]:   retry_all: False
+[0m12:13:46.856902 [info ] [MainThread]:   insecure_mode: False
+[0m12:13:46.857509 [info ] [MainThread]:   reuse_connections: True
+[0m12:13:46.857509 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m12:13:46.857509 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:13:47.333584 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m12:13:47.817146 [debug] [MainThread]: Using snowflake connection "debug"
+[0m12:13:47.817146 [debug] [MainThread]: On debug: select 1 as id
+[0m12:13:47.817146 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:13:50.625214 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.813 seconds
+[0m12:13:50.625214 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:13:50.625214 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:13:50.625214 [debug] [MainThread]: Command `dbt debug` succeeded at 12:13:50.625214 after 5.18 seconds
+[0m12:13:50.625214 [debug] [MainThread]: Connection 'debug' was left open.
+[0m12:13:50.625214 [debug] [MainThread]: On debug: Close
+[0m12:13:50.726584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE64FF0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE67FB27C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BE680111C0>]}
+[0m12:13:50.727584 [debug] [MainThread]: Flushing usage events
+[0m12:13:51.633448 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:13:59.636680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B5FD60FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B62007C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B62007FA0>]}
+
+
+============================== 12:13:59.636680 | 043b5b83-f8b8-4b4c-a6e7-dc028c482758 ==============================
+[0m12:13:59.636680 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:13:59.636680 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'fail_fast': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'log_format': 'default', 'target_path': 'None', 'version_check': 'True', 'empty': 'False', 'printer_width': '80', 'partial_parse': 'True', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'quiet': 'False', 'warn_error': 'None', 'write_json': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'no_print': 'None', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:14:00.576292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '043b5b83-f8b8-4b4c-a6e7-dc028c482758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B62C75A00>]}
+[0m12:14:00.633905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '043b5b83-f8b8-4b4c-a6e7-dc028c482758', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B6174B0A0>]}
+[0m12:14:00.635910 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:14:01.160391 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 1 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+[0m12:14:01.163452 [debug] [MainThread]: Command `dbt run` failed at 12:14:01.163452 after 1.74 seconds
+[0m12:14:01.163452 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B5FD60FA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B63E253D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026B63E25280>]}
+[0m12:14:01.163452 [debug] [MainThread]: Flushing usage events
+[0m12:14:02.059126 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:13.169914 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F045B0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F06857C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F06857E50>]}
+
+
+============================== 12:14:13.169914 | dc1d7f57-c448-41b5-8218-cfa59f53be30 ==============================
+[0m12:14:13.169914 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:14:13.169914 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt deps', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'introspect': 'True', 'log_format': 'default', 'warn_error': 'None', 'write_json': 'True', 'partial_parse': 'True', 'target_path': 'None', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:14:13.322981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dc1d7f57-c448-41b5-8218-cfa59f53be30', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F06857B80>]}
+[0m12:14:13.407048 [debug] [MainThread]: Set downloads directory='C:\Users\GaneshL\AppData\Local\Temp\dbt-downloads-shd6b4m4'
+[0m12:14:13.409054 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m12:14:13.528678 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m12:14:13.544809 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m12:14:13.605778 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m12:14:13.617779 [info ] [MainThread]: Updating lock file in file path: C:\Users\GaneshL\Documents\poc\tko_trial/package-lock.yml
+[0m12:14:13.628482 [debug] [MainThread]: Set downloads directory='C:\Users\GaneshL\AppData\Local\Temp\dbt-downloads-rv1oo761'
+[0m12:14:13.632492 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m12:14:14.710091 [info ] [MainThread]: Installed from version 1.3.3
+[0m12:14:14.710091 [info ] [MainThread]: Up to date!
+[0m12:14:14.710091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dc1d7f57-c448-41b5-8218-cfa59f53be30', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F0693E520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F06857190>]}
+[0m12:14:14.710091 [debug] [MainThread]: Command `dbt deps` succeeded at 12:14:14.710091 after 1.77 seconds
+[0m12:14:14.710091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F045B0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F068EBF70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F0693E490>]}
+[0m12:14:14.710091 [debug] [MainThread]: Flushing usage events
+[0m12:14:15.599304 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:14:21.497415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271037A0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027105A46C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027105A46FA0>]}
+
+
+============================== 12:14:21.503012 | 5ab3be5a-137b-479d-b895-a09da31f0c83 ==============================
+[0m12:14:21.503012 [info ] [MainThread]: Running with dbt=1.10.17
+[0m12:14:21.505665 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'debug': 'False', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'log_format': 'default', 'version_check': 'True', 'empty': 'False', 'printer_width': '80', 'quiet': 'False', 'introspect': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True', 'no_print': 'None', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\GaneshL\\Documents\\poc\\tko_trial\\logs', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\GaneshL\\.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m12:14:22.477446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027105A0AEB0>]}
+[0m12:14:22.530493 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271066E0AC0>]}
+[0m12:14:22.530493 [info ] [MainThread]: Registered adapter: snowflake=1.10.2
+[0m12:14:23.061266 [debug] [MainThread]: checksum: a50d730a31f4c1af850aa8110f398f1e1657a0325ec5753dae2929b817189a3e, vars: {}, profile: , target: , version: 1.10.17
+[0m12:14:23.066695 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m12:14:23.066695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271068CD340>]}
+[0m12:14:24.917608 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.tko_trial.staging
+[0m12:14:24.928613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027107FEB130>]}
+[0m12:14:25.020648 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m12:14:25.031545 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m12:14:25.102784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027108031DC0>]}
+[0m12:14:25.103905 [info ] [MainThread]: Found 5 models, 30 sources, 613 macros
+[0m12:14:25.104960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027107F91130>]}
+[0m12:14:25.106248 [info ] [MainThread]: 
+[0m12:14:25.107240 [info ] [MainThread]: Concurrency: 6 threads (target='dev')
+[0m12:14:25.107240 [info ] [MainThread]: 
+[0m12:14:25.108241 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m12:14:25.115646 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m12:14:25.125033 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING'
+[0m12:14:25.608426 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m12:14:25.608426 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING"
+[0m12:14:25.608426 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m12:14:25.608426 [debug] [ThreadPool]: On list_MEDIADMSTAGING: show terse schemas in database MEDIADMSTAGING
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING"} */
+[0m12:14:25.608426 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:25.612103 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:28.672963 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.066 seconds
+[0m12:14:28.913800 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.305 seconds
+[0m12:14:28.913800 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MEDIADMSTAGING, now create_MEDIADMSTAGING_intermediate)
+[0m12:14:28.913800 [debug] [ThreadPool]: Creating schema "database: "MEDIADMSTAGING"
+schema: "intermediate"
+"
+[0m12:14:28.913800 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_MEDIADMSTAGING, now create_MEDIADMSTAGING_DEV)
+[0m12:14:28.913800 [debug] [ThreadPool]: Using snowflake connection "create_MEDIADMSTAGING_intermediate"
+[0m12:14:28.913800 [debug] [ThreadPool]: Creating schema "database: "MEDIADMSTAGING"
+schema: "DEV"
+"
+[0m12:14:28.913800 [debug] [ThreadPool]: On create_MEDIADMSTAGING_intermediate: create schema if not exists MEDIADMSTAGING.intermediate
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "create_MEDIADMSTAGING_intermediate"} */
+[0m12:14:28.926260 [debug] [ThreadPool]: Using snowflake connection "create_MEDIADMSTAGING_DEV"
+[0m12:14:28.926260 [debug] [ThreadPool]: On create_MEDIADMSTAGING_DEV: create schema if not exists MEDIADMSTAGING.DEV
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "create_MEDIADMSTAGING_DEV"} */
+[0m12:14:29.004170 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.077 seconds
+[0m12:14:29.015800 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m12:14:29.020816 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_intermediate'
+[0m12:14:29.029814 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_intermediate"
+[0m12:14:29.029814 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_MEDIADMSTAGING_DEV'
+[0m12:14:29.029814 [debug] [ThreadPool]: On list_MEDIADMSTAGING_intermediate: show objects in MEDIADMSTAGING.intermediate
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_intermediate"} */;
+[0m12:14:29.032163 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:29.032163 [debug] [ThreadPool]: Using snowflake connection "list_MEDIADMSTAGING_DEV"
+[0m12:14:29.035513 [debug] [ThreadPool]: On list_MEDIADMSTAGING_DEV: show objects in MEDIADMSTAGING.DEV
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "connection_name": "list_MEDIADMSTAGING_DEV"} */;
+[0m12:14:29.037517 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:31.393514 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.360 seconds
+[0m12:14:31.405458 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 2.368 seconds
+[0m12:14:31.405458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027101C64A00>]}
+[0m12:14:31.434902 [debug] [Thread-1  ]: Began running node model.tko_trial.int_invoice_defaults
+[0m12:14:31.434902 [debug] [Thread-2  ]: Began running node model.tko_trial.int_sap_invoices_deduped
+[0m12:14:31.434902 [info ] [Thread-1  ]: 1 of 5 START sql view model intermediate.int_invoice_defaults .................. [RUN]
+[0m12:14:31.434902 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_defaults'
+[0m12:14:31.434902 [info ] [Thread-2  ]: 2 of 5 START sql view model intermediate.int_sap_invoices_deduped .............. [RUN]
+[0m12:14:31.434902 [debug] [Thread-1  ]: Began compiling node model.tko_trial.int_invoice_defaults
+[0m12:14:31.434902 [debug] [Thread-2  ]: Acquiring new snowflake connection 'model.tko_trial.int_sap_invoices_deduped'
+[0m12:14:31.444988 [debug] [Thread-1  ]: Writing injected SQL for node "model.tko_trial.int_invoice_defaults"
+[0m12:14:31.444988 [debug] [Thread-2  ]: Began compiling node model.tko_trial.int_sap_invoices_deduped
+[0m12:14:31.449483 [debug] [Thread-2  ]: Writing injected SQL for node "model.tko_trial.int_sap_invoices_deduped"
+[0m12:14:31.453225 [debug] [Thread-2  ]: Began executing node model.tko_trial.int_sap_invoices_deduped
+[0m12:14:31.453225 [debug] [Thread-1  ]: Began executing node model.tko_trial.int_invoice_defaults
+[0m12:14:31.478236 [debug] [Thread-2  ]: Writing runtime sql for node "model.tko_trial.int_sap_invoices_deduped"
+[0m12:14:31.478236 [debug] [Thread-1  ]: Writing runtime sql for node "model.tko_trial.int_invoice_defaults"
+[0m12:14:31.486167 [debug] [Thread-2  ]: Using snowflake connection "model.tko_trial.int_sap_invoices_deduped"
+[0m12:14:31.486167 [debug] [Thread-1  ]: Using snowflake connection "model.tko_trial.int_invoice_defaults"
+[0m12:14:31.486167 [debug] [Thread-2  ]: On model.tko_trial.int_sap_invoices_deduped: create or replace   view MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+  
+  
+  
+  
+  as (
+    
+
+WITH raw_sap AS (
+    SELECT 
+        SOL_NUMBER,
+        SAP_INVOICE,
+        SAP_ACCTG_DOC,
+        CASE WHEN SAP_CLEAR_DOC = '' THEN NULL ELSE SAP_CLEAR_DOC END AS SAP_CLEAR_DOC,
+        TRY_CAST(SAP_CLEAR_DATE AS DATE) AS SAP_CLEAR_DATE,
+        TRY_CAST(SAP_INV_DATE AS DATE) AS SAP_INV_DATE,
+        InvoiceId,
+        InvoiceType,
+        LOWER(SAP_BILLING_STATUS) AS SAP_BILLING_STATUS,
+        UpdatedDate,
+        Id
+    FROM MediaDMStaging.dbo.SAPImportedInvoices
+    WHERE StatusId = 1
+),
+
+calculated_windows AS (
+    SELECT 
+        *,
+        FIRST_VALUE(TRY_CAST(SAP_INV_DATE AS DATE)) OVER (
+            PARTITION BY SAP_INVOICE, InvoiceId 
+            ORDER BY UpdatedDate
+        ) AS SAP_INV_DATE_FIRST,
+        
+        ROW_NUMBER() OVER (
+            PARTITION BY InvoiceId, SAP_INVOICE 
+            ORDER BY UpdatedDate DESC, Id DESC
+        ) AS RowNumber
+    FROM raw_sap
+)
+
+SELECT * FROM calculated_windows WHERE RowNumber = 1
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_sap_invoices_deduped"} */;
+[0m12:14:31.486167 [debug] [Thread-1  ]: On model.tko_trial.int_invoice_defaults: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_defaults
+  
+  
+  
+  
+  as (
+    
+
+-- 1. Rights Dummy Row (R-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'R-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 2. Technical Dummy Row (T-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates 'T-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    '1900-01-01'::DATE AS InvoiceDueDate,
+    '1900-01-01'::DATE AS SAPInvoiceCreatedDate,
+    '1900-01-01'::DATE AS SAPDocumentDate,
+    '1900-01-01'::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Technical' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    '1900-01-01'::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+
+UNION ALL
+
+-- 3. Generic Dummy Row (-1)
+SELECT 
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        '', 
+        CAST(COALESCE(-1, -1) AS VARCHAR)
+    )
+ AS InvoiceKey, -- Generates '-1'
+    -1 AS SOLItem,
+    'N/A' AS BillingCode,
+    'N/A' AS InvoiceCategory,
+    'N/A' AS InvoiceStatus,
+    'N/A' AS InterfaceStatus,
+    'N/A' AS FeeType,
+    -1 AS OrderHeaderId,
+    -1 AS OrderDetailId,
+    -1 AS InstallmentNo,
+    'N/A' AS CurrencyCode,
+    1900 AS ProjectionYear,
+    'N/A' AS SAPLineItemNumber,
+    'N/A' AS SAPSalesOrderNumber,
+    NULL::DATE AS InvoiceDueDate,
+    NULL::DATE AS SAPInvoiceCreatedDate,
+    NULL::DATE AS SAPDocumentDate,
+    NULL::DATE AS InvoiceUpdatedDate,
+    'Unknown' AS InvoiceInstructions,
+    'Unknown' AS InvoiceDescription,
+    'N/A' AS InvoiceReferenceNumber,
+    'Rights' AS RightsTechIndicator,
+    'N/A' AS CancellationStatus,
+    'N/A' AS Address1,
+    'N/A' AS Address2,
+    'N/A' AS PostalCode,
+    'N/A' AS City,
+    'N/A' AS Region,
+    'N/A' AS Country,
+    'N/A' AS AccountingDocumentNumber,
+    'N/A' AS ClearingDocumentNumber,
+    NULL::DATE AS ClearingDocumentDate,
+    'N/A' AS SOLNumber,
+    'N/A' AS SAP_BILLING_STATUS,
+    'N/A' AS IsDataMartDueDate,
+    'N/A' AS IssueSite,
+    -1 AS BillingCompanyId,
+    'Unknown' AS BillingCompany,
+    'N/A' AS CompanyCode,
+    NULL::DATE AS InvoiceProcessedDate,
+    'N/A' AS BillingType,
+    NULL::DECIMAL(10,2) AS VAT,
+    NULL::DECIMAL(10,2) AS WHT
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_defaults"} */;
+[0m12:14:31.486167 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+[0m12:14:31.486167 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+[0m12:14:33.961105 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 2.465 seconds
+[0m12:14:33.978911 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.482 seconds
+[0m12:14:33.982586 [debug] [Thread-2  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027101D37850>]}
+[0m12:14:33.982586 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027107CDC1F0>]}
+[0m12:14:33.982586 [info ] [Thread-2  ]: 2 of 5 OK created sql view model intermediate.int_sap_invoices_deduped ......... [[32mSUCCESS 1[0m in 2.54s]
+[0m12:14:33.982586 [debug] [Thread-2  ]: Finished running node model.tko_trial.int_sap_invoices_deduped
+[0m12:14:33.982586 [info ] [Thread-1  ]: 1 of 5 OK created sql view model intermediate.int_invoice_defaults ............. [[32mSUCCESS 1[0m in 2.55s]
+[0m12:14:33.982586 [debug] [Thread-4  ]: Began running node model.tko_trial.int_invoice_rights
+[0m12:14:33.982586 [debug] [Thread-1  ]: Finished running node model.tko_trial.int_invoice_defaults
+[0m12:14:33.986854 [debug] [Thread-5  ]: Began running node model.tko_trial.int_invoice_technical
+[0m12:14:33.986854 [info ] [Thread-4  ]: 3 of 5 START sql view model intermediate.int_invoice_rights .................... [RUN]
+[0m12:14:33.986854 [debug] [Thread-4  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_rights'
+[0m12:14:33.986854 [debug] [Thread-4  ]: Began compiling node model.tko_trial.int_invoice_rights
+[0m12:14:33.986854 [info ] [Thread-5  ]: 4 of 5 START sql view model intermediate.int_invoice_technical ................. [RUN]
+[0m12:14:33.996944 [debug] [Thread-5  ]: Acquiring new snowflake connection 'model.tko_trial.int_invoice_technical'
+[0m12:14:33.996944 [debug] [Thread-5  ]: Began compiling node model.tko_trial.int_invoice_technical
+[0m12:14:33.996944 [debug] [Thread-4  ]: Writing injected SQL for node "model.tko_trial.int_invoice_rights"
+[0m12:14:34.006233 [debug] [Thread-5  ]: Writing injected SQL for node "model.tko_trial.int_invoice_technical"
+[0m12:14:34.006233 [debug] [Thread-5  ]: Began executing node model.tko_trial.int_invoice_technical
+[0m12:14:34.006233 [debug] [Thread-4  ]: Began executing node model.tko_trial.int_invoice_rights
+[0m12:14:34.006233 [debug] [Thread-5  ]: Writing runtime sql for node "model.tko_trial.int_invoice_technical"
+[0m12:14:34.017366 [debug] [Thread-4  ]: Writing runtime sql for node "model.tko_trial.int_invoice_rights"
+[0m12:14:34.023348 [debug] [Thread-5  ]: Using snowflake connection "model.tko_trial.int_invoice_technical"
+[0m12:14:34.025355 [debug] [Thread-4  ]: Using snowflake connection "model.tko_trial.int_invoice_rights"
+[0m12:14:34.025355 [debug] [Thread-5  ]: On model.tko_trial.int_invoice_technical: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_technical
+  
+  
+  
+  
+  as (
+    
+
+WITH tech_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderInvoiceDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'T' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'T', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    'N/A' AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) AS InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Technical' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END AS CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE) AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM tech_source r
+JOIN MediaDMStaging.dbo.OrderInvoice ri ON ri.Id = r.OrderInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.FeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_technical"} */;
+[0m12:14:34.025355 [debug] [Thread-4  ]: On model.tko_trial.int_invoice_rights: create or replace   view MEDIADMSTAGING.intermediate.int_invoice_rights
+  
+  
+  
+  
+  as (
+    
+
+WITH rights_source AS (
+    SELECT 
+        r.Id AS RecordId,
+        r.OrderRightsInvoiceId,
+        r.OrderDetailId,
+        r.VatCodeId,
+        r.WithHoldingTaxRecordId,
+        r.PseudoInvoicingTypeId,
+        r.ProjectionYear,
+        r.SAPLineItemNumber,
+        r.LicensorId
+    FROM MediaDMStaging.dbo.OrderRightsInvoiceOrderDetail r
+),
+sap_data AS (
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_sap_invoices_deduped
+    WHERE InvoiceType = 'R' OR InvoiceType IS NULL
+)
+
+SELECT
+    -- 1. InvoiceKey
+    
+    -- Generates keys like 'R1001' (Rights) or 'T1001' (Technical)
+    -- Handles NULLs by defaulting to -1
+    CONCAT(
+        'R', 
+        CAST(COALESCE(r.RecordId, -1) AS VARCHAR)
+    )
+ as InvoiceKey,
+    -- 2. SOLItem
+    COALESCE(r.RecordId, -1) AS SOLItem,
+    -- 3. BillingCode
+    'Unknown' AS BillingCode,
+    -- 4. InvoiceCategory
+    'N/A' AS InvoiceCategory,
+    -- 5. InvoiceStatus
+    COALESCE(s.Description, 'N/A') AS InvoiceStatus,
+    -- 6. InterfaceStatus
+    'N/A' AS InterfaceStatus,
+    -- 7. FeeType
+    COALESCE(f.Description, 'N/A') AS FeeType,
+    -- 8. OrderHeaderId
+    COALESCE(ri.OrderHeaderId, -1) AS OrderHeaderId,
+    -- 9. OrderDetailId
+    COALESCE(r.OrderDetailId, -1) AS OrderDetailId,
+    -- 10. InstallmentNo
+    COALESCE(ri.InstallmentNo, -1) AS InstallmentNo,
+    -- 11. CurrencyCode
+    COALESCE(c.Code, 'N/A') AS CurrencyCode,
+    -- 12. ProjectionYear
+    COALESCE(CAST(r.ProjectionYear AS INT), 1900) AS ProjectionYear,
+    -- 13. SAPLineItemNumber
+    COALESCE(r.SAPLineItemNumber, 'N/A') AS SAPLineItemNumber,
+    -- 14. SAPSalesOrderNumber
+    COALESCE(ri.SAPSalesOrderNumber, 'N/A') AS SAPSalesOrderNumber,
+    -- 15. InvoiceDueDate
+    CAST(ri.InvoiceDueDate AS DATE) as InvoiceDueDate,
+    -- 16. SAPInvoiceCreatedDate
+    CAST(sii.SAP_INV_DATE_FIRST AS DATE) AS SAPInvoiceCreatedDate,
+    -- 17. SAPDocumentDate
+    CAST(ri.CreatedDate AS DATE) AS SAPDocumentDate,
+    -- 18. InvoiceUpdatedDate
+    CAST(ri.UpdatedDate AS DATE) AS InvoiceUpdatedDate,
+    -- 19. InvoiceInstructions
+    COALESCE(ri.InvoiceInstructions, 'Unknown') AS InvoiceInstructions,
+    -- 20. InvoiceDescription
+    COALESCE(ri.InvoiceDescription, 'Unknown') AS InvoiceDescription,
+    -- 21. InvoiceReferenceNumber
+    COALESCE(ri.InvoiceReferenceNumber, 'N/A') AS InvoiceReferenceNumber,
+    -- 22. RightsTechIndicator
+    'Rights' AS RightsTechIndicator,
+    -- 23. CancellationStatus
+    CASE 
+        WHEN ri.CreditedInvoiceId IS NOT NULL THEN 'Credit Note' 
+        WHEN ri.InvoiceWasCancelled = 1 THEN 'Cancelled' 
+        ELSE 'Not Cancelled'
+    END as CancellationStatus,
+    -- 24. Address1
+    COALESCE(ca.Line1, 'N/A') AS Address1,
+    -- 25. Address2
+    COALESCE(ca.Line2, 'N/A') AS Address2,
+    -- 26. PostalCode
+    COALESCE(ca.Line6, 'N/A') AS PostalCode,
+    -- 27. City
+    COALESCE(ca.Line3, 'N/A') AS City,
+    -- 28. Region
+    COALESCE(tr.Description, 'N/A') AS Region,
+    -- 29. Country
+    COALESCE(ti.Description, 'N/A') AS Country,
+    -- 30. AccountingDocumentNumber
+    COALESCE(sii.SAP_ACCTG_DOC, 'N/A') AS AccountingDocumentNumber,
+    -- 31. ClearingDocumentNumber
+    COALESCE(ri.SAPDocumentNumber, sii.SAP_CLEAR_DOC, 'N/A') AS ClearingDocumentNumber,
+    -- 32. ClearingDocumentDate
+    CAST(COALESCE(ri.ClearingDate, sii.SAP_CLEAR_DATE, '1900-01-01') AS DATE) AS ClearingDocumentDate,
+    -- 33. SOLNumber
+    COALESCE(sii.SOL_NUMBER, 'N/A') AS SOLNumber,
+    -- 34. SAP_BILLING_STATUS
+    COALESCE(sii.SAP_BILLING_STATUS, 'N/A') AS SAP_BILLING_STATUS,
+    -- 35. IsDataMartDueDate
+    CASE 
+        WHEN ri.IsDataMartDueDate = 1 THEN 'Yes'
+        ELSE 'No'
+    END AS IsDataMartDueDate,
+    -- 36. IssueSite
+    COALESCE(isl.Description,'N/A') AS IssueSite,
+    -- 37. BillingCompanyId
+    COALESCE(bc.Id,-1) AS BillingCompanyId,
+    -- 38. BillingCompany
+    COALESCE(bc.Description,'Unknown') AS BillingCompany,
+    -- 39. CompanyCode
+    bc.SAPCompanyCode AS CompanyCode,
+    -- 40. InvoiceProcessedDate
+    CAST(ri.InvoiceProcessedDate AS DATE) AS InvoiceProcessedDate,
+    -- 41. BillingType
+    CASE
+        WHEN oh.SalesCategoryId = 10 THEN 'Commission Billing' 
+        WHEN r.LicensorId IN (10, 9) THEN 'IMG Billing'
+        WHEN r.LicensorId IN (8, 7) THEN
+            CASE 
+                WHEN pit.Id IS NOT NULL THEN pit.Description || ' Billing'  
+                ELSE 'Agency Billing'
+            END
+        ELSE '-'
+    END AS BillingType,
+    -- 42. VAT
+    vc.SapVatRate/100 AS VAT,
+    -- 43. WHT
+    wht.TaxPercentage/100 AS WHT
+
+FROM rights_source r
+JOIN MediaDMStaging.dbo.OrderRightsInvoice ri ON ri.Id = r.OrderRightsInvoiceId
+LEFT JOIN MediaDMStaging.dbo.InvoiceStatus_lu s ON s.Id = ri.InvoiceStatusId
+LEFT JOIN MediaDMStaging.dbo.Fee_lu f ON f.Id = ri.RightsFeeId
+LEFT JOIN MediaDMStaging.dbo.Currency_lu c ON c.Id = ri.CurrencyId
+LEFT JOIN MediaDMStaging.dbo.CustomerAddress ca ON ri.CustomerAddressId = ca.Id
+LEFT JOIN MediaDMStaging.dbo.TerritoryRegion_lu tr ON ca.TerritoryRegionId = tr.Id
+LEFT JOIN MediaDMStaging.dbo.Territory_lu ti ON ca.TerritoryId = ti.Id
+INNER JOIN MediaDMStaging.dbo.OrderDetail od ON r.OrderDetailId = od.Id
+LEFT JOIN MediaDMStaging.dbo.BillingCompany_lu bc ON bc.Id = od.BillingCompanyId
+LEFT JOIN MediaDMStaging.dbo.IssueSite_lu isl ON isl.Id = bc.IssueSiteId
+LEFT JOIN MediaDMStaging.dbo.VatCodes vc ON vc.Id = r.VatCodeId
+LEFT JOIN MediaDMStaging.dbo.WithholdingTaxRecord wht ON wht.Id = r.WithHoldingTaxRecordId
+INNER JOIN MediaDMStaging.dbo.OrderHeader oh ON oh.Id = ri.OrderHeaderId
+LEFT JOIN MediaDMStaging.dbo.PseudoInvoicingType_lu pit ON pit.Id = r.PseudoInvoicingTypeId
+LEFT JOIN sap_data sii ON r.RecordId = sii.InvoiceId AND ri.InvoiceReferenceNumber = sii.SAP_INVOICE
+  )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.int_invoice_rights"} */;
+[0m12:14:34.025355 [debug] [Thread-5  ]: Opening a new connection, currently in state init
+[0m12:14:34.025355 [debug] [Thread-4  ]: Opening a new connection, currently in state init
+[0m12:14:36.635429 [debug] [Thread-5  ]: SQL status: SUCCESS 1 in 2.613 seconds
+[0m12:14:36.635429 [debug] [Thread-5  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027108C71370>]}
+[0m12:14:36.635429 [info ] [Thread-5  ]: 4 of 5 OK created sql view model intermediate.int_invoice_technical ............ [[32mSUCCESS 1[0m in 2.64s]
+[0m12:14:36.635429 [debug] [Thread-5  ]: Finished running node model.tko_trial.int_invoice_technical
+[0m12:14:36.898233 [debug] [Thread-4  ]: SQL status: SUCCESS 1 in 2.868 seconds
+[0m12:14:36.900883 [debug] [Thread-4  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027108CDD820>]}
+[0m12:14:36.900883 [info ] [Thread-4  ]: 3 of 5 OK created sql view model intermediate.int_invoice_rights ............... [[32mSUCCESS 1[0m in 2.91s]
+[0m12:14:36.900883 [debug] [Thread-4  ]: Finished running node model.tko_trial.int_invoice_rights
+[0m12:14:36.900883 [debug] [Thread-3  ]: Began running node model.tko_trial.dim_invoice
+[0m12:14:36.900883 [info ] [Thread-3  ]: 5 of 5 START sql dynamic_table model DEV.dim_invoice ........................... [RUN]
+[0m12:14:36.905212 [debug] [Thread-3  ]: Acquiring new snowflake connection 'model.tko_trial.dim_invoice'
+[0m12:14:36.905212 [debug] [Thread-3  ]: Began compiling node model.tko_trial.dim_invoice
+[0m12:14:36.907217 [debug] [Thread-3  ]: Writing injected SQL for node "model.tko_trial.dim_invoice"
+[0m12:14:36.916267 [debug] [Thread-3  ]: Began executing node model.tko_trial.dim_invoice
+[0m12:14:36.925376 [debug] [Thread-3  ]: Applying CREATE to: MEDIADMSTAGING.DEV.dim_invoice
+[0m12:14:36.941382 [debug] [Thread-3  ]: Writing runtime sql for node "model.tko_trial.dim_invoice"
+[0m12:14:37.023114 [debug] [Thread-3  ]: Using snowflake connection "model.tko_trial.dim_invoice"
+[0m12:14:37.025120 [debug] [Thread-3  ]: On model.tko_trial.dim_invoice: create dynamic table MEDIADMSTAGING.DEV.dim_invoice
+        target_lag = '1 hour'
+        warehouse = COMPUTE_WH
+        refresh_mode = AUTO
+
+        initialize = ON_CREATE
+
+        
+
+        
+
+        as (
+            
+
+WITH combined_invoices AS (
+    -- 1. Rights Invoices (Prefix 'R')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_rights
+    
+    UNION ALL
+    
+    -- 2. Technical Invoices (Prefix 'T')
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_technical
+    
+    UNION ALL
+    
+    -- 3. Default/Dummy Rows (R-1, T-1, -1)
+    SELECT * FROM MEDIADMSTAGING.intermediate.int_invoice_defaults
+)
+
+SELECT 
+    InvoiceKey,
+    SOLItem,
+    BillingCode,
+    InvoiceCategory,
+    InvoiceStatus,
+    InterfaceStatus,
+    FeeType,
+    OrderHeaderId,
+    OrderDetailId,
+    InstallmentNo,
+    CurrencyCode,
+    ProjectionYear,
+    SAPLineItemNumber,
+    SAPSalesOrderNumber,
+    InvoiceDueDate,
+    SAPInvoiceCreatedDate,
+    SAPDocumentDate,
+    InvoiceUpdatedDate,
+    InvoiceInstructions,
+    InvoiceDescription,
+    InvoiceReferenceNumber,
+    RightsTechIndicator,
+    CancellationStatus,
+    Address1,
+    Address2,
+    PostalCode,
+    City,
+    Region,
+    Country,
+    AccountingDocumentNumber,
+    ClearingDocumentNumber,
+    ClearingDocumentDate,
+    SOLNumber,
+    SAP_BILLING_STATUS,
+    IsDataMartDueDate,
+    IssueSite,
+    BillingCompanyId,
+    BillingCompany,
+    CompanyCode,
+    InvoiceProcessedDate,
+    BillingType,
+    VAT,
+    WHT,
+    
+    -- Hash Key Generation using the macro
+    
+    -- Concatenates all relevant dimension columns and hashes them to fingerprint the row
+    -- Uses standard Snowflake MD5 and NULL handling
+    MD5(
+        CONCAT(
+            COALESCE(CAST(InvoiceKey AS VARCHAR), ''), '|',
+            COALESCE(CAST(SOLItem AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceCategory AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(InterfaceStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(FeeType AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderHeaderId AS VARCHAR), ''), '|',
+            COALESCE(CAST(OrderDetailId AS VARCHAR), ''), '|',
+            COALESCE(CAST(InstallmentNo AS VARCHAR), ''), '|',
+            COALESCE(CAST(CurrencyCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(ProjectionYear AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPLineItemNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAPSalesOrderNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceDueDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPInvoiceCreatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(SAPDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(TO_CHAR(InvoiceUpdatedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(InvoiceInstructions AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceDescription AS VARCHAR), ''), '|',
+            COALESCE(CAST(InvoiceReferenceNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(RightsTechIndicator AS VARCHAR), ''), '|',
+            COALESCE(CAST(CancellationStatus AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address1 AS VARCHAR), ''), '|',
+            COALESCE(CAST(Address2 AS VARCHAR), ''), '|',
+            COALESCE(CAST(PostalCode AS VARCHAR), ''), '|',
+            COALESCE(CAST(City AS VARCHAR), ''), '|',
+            COALESCE(CAST(Region AS VARCHAR), ''), '|',
+            COALESCE(CAST(Country AS VARCHAR), ''), '|',
+            COALESCE(CAST(AccountingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(ClearingDocumentNumber AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(ClearingDocumentDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(SOLNumber AS VARCHAR), ''), '|',
+            COALESCE(CAST(SAP_BILLING_STATUS AS VARCHAR), ''), '|',
+            COALESCE(CAST(IsDataMartDueDate AS VARCHAR), ''), '|',
+            COALESCE(CAST(IssueSite AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompanyId AS VARCHAR), ''), '|',
+            COALESCE(CAST(BillingCompany AS VARCHAR), ''), '|',
+            COALESCE(CAST(CompanyCode AS VARCHAR), ''), '|',
+            COALESCE(TO_CHAR(InvoiceProcessedDate, 'YYYY-MM-DD'), ''), '|',
+            COALESCE(CAST(BillingType AS VARCHAR), ''), '|',
+            COALESCE(CAST(VAT AS VARCHAR), ''), '|',
+            COALESCE(CAST(WHT AS VARCHAR), '')
+        )
+    )
+ AS HashKey,
+    
+    NULL AS DeletedOn
+
+FROM combined_invoices
+        )
+/* {"app": "dbt", "dbt_version": "1.10.17", "profile_name": "tko_trial", "target_name": "dev", "node_id": "model.tko_trial.dim_invoice"} */
+[0m12:14:37.025120 [debug] [Thread-3  ]: Opening a new connection, currently in state init
+[0m12:14:47.090582 [debug] [Thread-3  ]: SQL status: SUCCESS 1 in 10.066 seconds
+[0m12:14:47.090582 [debug] [Thread-3  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5ab3be5a-137b-479d-b895-a09da31f0c83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027108CA3D00>]}
+[0m12:14:47.090582 [info ] [Thread-3  ]: 5 of 5 OK created sql dynamic_table model DEV.dim_invoice ...................... [[32mSUCCESS 1[0m in 10.19s]
+[0m12:14:47.090582 [debug] [Thread-3  ]: Finished running node model.tko_trial.dim_invoice
+[0m12:14:47.096257 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:14:47.096257 [debug] [MainThread]: Connection 'create_MEDIADMSTAGING_DEV' was left open.
+[0m12:14:47.096257 [debug] [MainThread]: On create_MEDIADMSTAGING_DEV: Close
+[0m12:14:47.179451 [debug] [MainThread]: Connection 'create_MEDIADMSTAGING_intermediate' was left open.
+[0m12:14:47.179451 [debug] [MainThread]: On create_MEDIADMSTAGING_intermediate: Close
+[0m12:14:47.276595 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_intermediate' was left open.
+[0m12:14:47.276595 [debug] [MainThread]: On list_MEDIADMSTAGING_intermediate: Close
+[0m12:14:47.357664 [debug] [MainThread]: Connection 'list_MEDIADMSTAGING_DEV' was left open.
+[0m12:14:47.357664 [debug] [MainThread]: On list_MEDIADMSTAGING_DEV: Close
+[0m12:14:47.443062 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_defaults' was left open.
+[0m12:14:47.443062 [debug] [MainThread]: On model.tko_trial.int_invoice_defaults: Close
+[0m12:14:47.515645 [debug] [MainThread]: Connection 'model.tko_trial.int_sap_invoices_deduped' was left open.
+[0m12:14:47.515645 [debug] [MainThread]: On model.tko_trial.int_sap_invoices_deduped: Close
+[0m12:14:47.609320 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_rights' was left open.
+[0m12:14:47.609320 [debug] [MainThread]: On model.tko_trial.int_invoice_rights: Close
+[0m12:14:47.689449 [debug] [MainThread]: Connection 'model.tko_trial.int_invoice_technical' was left open.
+[0m12:14:47.689449 [debug] [MainThread]: On model.tko_trial.int_invoice_technical: Close
+[0m12:14:47.788261 [debug] [MainThread]: Connection 'model.tko_trial.dim_invoice' was left open.
+[0m12:14:47.788261 [debug] [MainThread]: On model.tko_trial.dim_invoice: Close
+[0m12:14:47.880050 [info ] [MainThread]: 
+[0m12:14:47.880050 [info ] [MainThread]: Finished running 1 dynamic table model, 4 view models in 0 hours 0 minutes and 22.77 seconds (22.77s).
+[0m12:14:47.880050 [debug] [MainThread]: Command end result
+[0m12:14:47.897884 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\manifest.json
+[0m12:14:47.921622 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\GaneshL\Documents\poc\tko_trial\target\semantic_manifest.json
+[0m12:14:47.931226 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\GaneshL\Documents\poc\tko_trial\target\run_results.json
+[0m12:14:47.931857 [info ] [MainThread]: 
+[0m12:14:47.931857 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:14:47.931857 [info ] [MainThread]: 
+[0m12:14:47.931857 [info ] [MainThread]: Done. PASS=5 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=5
+[0m12:14:47.931857 [debug] [MainThread]: Command `dbt run` succeeded at 12:14:47.931857 after 26.67 seconds
+[0m12:14:47.931857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271037A0F70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002710312AD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000271066E0AC0>]}
+[0m12:14:47.931857 [debug] [MainThread]: Flushing usage events
+[0m12:14:49.043377 [debug] [MainThread]: An error was encountered while trying to flush usage events
